@@ -21,7 +21,6 @@ jobs:
       if: steps.autotagger.outputs.tagname != ''
       run: |
         cd ./build && npm install && cd ../
-        npm install
         npm run build --if-present
     - name: Deploy
       if: steps.autotagger.outputs.tagname != ''
@@ -30,7 +29,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: dist
-        CNAME: "{{ DOMAIN }}"
+        CNAME: "butlerlogic.com"
     - name: Rollback
       if: failure()
       uses: author/action-rollback@stable
@@ -44,18 +43,18 @@ jobs:
     #   env:
     #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
     #   with:
-    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Released {{ DOMAIN }} v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"title\":\"https://{{ DOMAIN }}\",\"title_link\":\"https://api.slack.com/\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Released butlerlogic.com v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"title\":\"https://butlerlogic.com\",\"title_link\":\"https://api.slack.com/\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
     # - name: Failure Notification
     #   if: failure() && steps.autotagger.outputs.tagname != '' && env.IS_PRERELEASE == ''
     #   uses: pullreminders/slack-action@master
     #   env:
     #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
     #   with:
-    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Failed to release {{ DOMAIN }} v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#96281b\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Failed to release.\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Failed to release butlerlogic.com v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#96281b\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Failed to release.\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
     # - name: Inaction Notification
     #   if: steps.autotagger.outputs.tagname == ''
     #   uses: pullreminders/slack-action@master
     #   env:
     #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
     #   with:
-    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"${{ github.actor }} committed changes (${{ github.ref }}) to {{ DOMAIN }} :file_cabinet:\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Merged changes (${{ github.ref }}) to {{ DOMAIN }} :file_cabinet:\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"${{ github.actor }} committed changes (${{ github.ref }}) to butlerlogic.com :file_cabinet:\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Merged changes (${{ github.ref }}) to butlerlogic.com :file_cabinet:\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'

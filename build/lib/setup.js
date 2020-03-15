@@ -25,7 +25,7 @@ rl.question(`\nWho is the credited author of this site?\nCurrently ${user}. Pres
   console.log(`Author set to ${user}`)
 
   // Identify package source
-  let pkg = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json')))
+  let pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../../package.json')))
 
   // Basic package updates
   pkg.scripts.resetup = pkg.scripts.setup
