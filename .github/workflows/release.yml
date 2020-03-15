@@ -48,8 +48,7 @@ jobs:
         cd ./build && npm install && cd ../
         npm run build --if-present
         ls -l
-        echo "test"
-        for d in dist/*/*/ ; do tar -cvzf ${d%%/}-${{ steps.autotagger.outputs.version }}.tar.gz ${d%%}*; done;
+        for d in dist/*/ ; do tar -cvzf ${d%%/}-${{ steps.autotagger.outputs.version }}.tar.gz ${d%%}*; done;
         if [[ ${{ github.ref }} == *"-"* ]]; then echo ::set-output isprerelease=true;else echo ::set-output isprerelease=false;fi
 
       # Upload tarballs to the release.
