@@ -1,4 +1,4 @@
-# butlerlogic.com
+# butlerlogic.com ![Version](https://img.shields.io/github/v/tag/butlerlogic/butlerlogic.com?label=Latest&style=for-the-badge)
 
 Built with ButlerLogic.
 
