@@ -2,11 +2,12 @@
 import fs from 'fs'
 import path from 'path'
 import readline from 'readline'
-// import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'url'
 import { execSync as exec } from 'child_process'
 import Release from './Release.js'
 
-// global.__dirname = path.dirname(fileURLToPath(import.meta.url))
+global.__dirname = path.dirname(fileURLToPath(import.meta.url))
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -32,7 +33,7 @@ rl.question(`\nWho is the credited author of this site?\nCurrently ${user}. Pres
   delete pkg.scripts.setup
 
   try {
-    const gitconfig = fs.readFileSync(path.join(process.cwd(), '.git/config')).toString()
+    const gitconfig = fs.readFileSync(path.join(__dirname, '../../.git/config')).toString()
     const cfg = gitconfig.trim().replace(/\t/g, '').split('\n').filter(i => i.trim().length > 0)
     const origin = 'https://' + /url\s+?=\s+?(.*@)?(.*)/i.exec(cfg.filter((el, i, a) => {
       return i > 0 && a.indexOf('[remote "origin"]') < i && /url\s+?=\s+?(.*)/i.test(el)
@@ -54,15 +55,15 @@ rl.question(`\nWho is the credited author of this site?\nCurrently ${user}. Pres
   release.on('write', () => {
     console.log('Updated Github Workflows')
 
-    fs.writeFileSync(path.join(process.cwd(), 'package.json', JSON.stringify(pkg, null, 2)))
+    fs.writeFileSync(path.join(__dirname, '../../', 'package.json'), JSON.stringify(pkg, null, 2))
     console.log('Updated package.json')
 
     let readme = `# ${release.domain}\n\nBuilt with ButlerLogic.\n\nGenereated on ${new Date().toLocaleString()}`
-    fs.writeFileSync(path.join(process.cwd(), 'README.md', readme))
+    fs.writeFileSync(path.join(__dirname, '../../', 'README.md'), readme)
     console.log('Updated README.md')
 
     let license = `# License\n\nCopyright &copy; ${new Date().getFullYear()} ${user}.\nAll rights reserved.`
-    fs.writeFileSync(path.join(process.cwd(), 'LICENSE', license))
+    fs.writeFileSync(path.join(__dirname, '../../', 'LICENSE'), license)
     console.log('Updated LICENSE')
 
     // Attempt to commit changes to the master branch & generate a personal branch

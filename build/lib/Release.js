@@ -9,7 +9,7 @@ export default class Release extends EventEmitter {
   constructor () {
     super()
 
-    const localpath = path.join(process.cwd(), '.github/workflows/release.yml')
+    const localpath = path.join(__dirname, '../../.github/workflows/release.yml')
 
     Object.defineProperties(this, {
       filepath: {
@@ -53,10 +53,10 @@ export default class Release extends EventEmitter {
 
     if (this.webdomain !== domain) {
       const originaldomain = this.webdomain
-      
+
       this.webdomain = domain
       this.release = this.release.replace(/\{\{\s+?DOMAIN\s+?\}\}/gi, this.webdomain)
-        
+
       if (domain !== originaldomain) {
         this.release = this.release.replace(originaldomain, this.webdomain)
       }
@@ -68,8 +68,8 @@ export default class Release extends EventEmitter {
             this.emit('dns_checked')
           } else {
             this.domain_ns = soa.hostmaster
-            
-            dns.lookup(answer, 'CNAME', (cnameerr, records) => {
+
+            dns.lookup(domain, 'CNAME', (cnameerr, records) => {
               if (!cnameerr) {
                 this.domain_cname = true
               }
@@ -118,7 +118,7 @@ export default class Release extends EventEmitter {
   }
 
   write () {
-    fs.writeFileSync(this.filepath, this.release))
+    fs.writeFileSync(this.filepath, this.release)
     this.emit('write')
   }
 }
