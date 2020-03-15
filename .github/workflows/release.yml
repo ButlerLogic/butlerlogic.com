@@ -61,7 +61,7 @@ jobs:
         release-tag: ${{ steps.autotagger.outputs.tagname }}
     
     - name: Deploy
-      if: steps.create_release.outputs.id != '' && env.IS_PRERELEASE != ''
+      if: steps.release.outputs.id != '' && env.IS_PRERELEASE != ''
       uses: peaceiris/actions-gh-pages@v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
