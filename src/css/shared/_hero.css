@@ -13,7 +13,7 @@
   }
 
   & .preslogan {
-    padding: calc(3.09rem - .5em) 0;
+    padding: 3.82rem 0 calc(3.09rem - .5em);
     @chassis font-size small;
     text-transform: uppercase;
     color: var(--grey-3);
