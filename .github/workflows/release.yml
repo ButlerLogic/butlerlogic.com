@@ -1,0 +1,61 @@
+# Slack notifications can be activated by uncommenting them
+# and adding the appropriate secret in the project repo settings.
+name: Tag & Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Process:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: butlerlogic/action-autotag@stable
+      id: autotagger
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Build Page
+      id: build
+      if: steps.autotagger.outputs.tagname != ''
+      run: |
+        cd ./build && npm install && cd ../
+        npm install
+        npm run build --if-present
+    - name: Deploy
+      if: steps.autotagger.outputs.tagname != ''
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: dist
+        CNAME: "{{ DOMAIN }}"
+    - name: Rollback
+      if: failure()
+      uses: author/action-rollback@stable
+      with:
+        tag: ${{ steps.autotagger.outputs.tagname }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Success Notification
+    #   if: success() && steps.autotagger.outputs.tagname != ''
+    #   uses: pullreminders/slack-action@master
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    #   with:
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Released {{ DOMAIN }} v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"title\":\"https://{{ DOMAIN }}\",\"title_link\":\"https://api.slack.com/\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
+    # - name: Failure Notification
+    #   if: failure() && steps.autotagger.outputs.tagname != '' && env.IS_PRERELEASE == ''
+    #   uses: pullreminders/slack-action@master
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    #   with:
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"Failed to release {{ DOMAIN }} v${{ steps.autotagger.outputs.version }}.\",\"color\":\"#96281b\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Failed to release.\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'
+    # - name: Inaction Notification
+    #   if: steps.autotagger.outputs.tagname == ''
+    #   uses: pullreminders/slack-action@master
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    #   with:
+    #     args: '{\"channel\":\"${{ secrets.SLACK_CHANNEL }}\",\"attachments\":[{\"fallback\":\"${{ github.actor }} committed changes (${{ github.ref }}) to {{ DOMAIN }} :file_cabinet:\",\"color\":\"#36a64f\",\"author_name\":\"${{ github.actor }}\",\"author_link\":\"https://github.com/${{ github.actor }}\",\"pretext\":\"Merged changes (${{ github.ref }}) to {{ DOMAIN }} :file_cabinet:\",\"fields\":[{\"title\":\"Version\",\"value\":\"${{ steps.autotagger.outputs.version }}\",\"short\": false},{\"title\":\"Repo\",\"value\":\"${{ github.repository }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"},{\"title\":\"SHA\",\"value\":\"${{ github.sha }}\"}]}]}'

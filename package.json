@@ -1,0 +1,17 @@
+{
+  "name": "template-website-static",
+  "version": "1.0.0-beta.1",
+  "description": "A template for building and deploying static websites on Github.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ./build && npm start",
+    "build:dev": "cd ./build && npm run dev",
+    "setup": "cd ./build && npm i && node ./lib/setup.js && cd ../"
+  },
+  "author": "SEE LICENSE IN LICENSE",
+  "license": "",
+  "type": "module",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
