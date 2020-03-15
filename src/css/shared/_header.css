@@ -1,0 +1,70 @@
+& > header {
+  position: sticky;
+  top: 0;
+
+  color: var(--black);
+  transition: background .382s ease;
+
+  & .width.constraint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+  }
+
+  & .logo {
+    font-weight: bold;
+    margin-right: var(--inline-block-padding-x);
+
+    & a {
+      @chassis new anchor;
+    }
+  }
+
+  & nav {
+    display: none;
+    margin: 0;
+
+    & a {
+      @chassis extend tag {
+        @state initial {
+          @chassis apply inline-block margin-x;
+          background: transparent;
+          @chassis font-size small mult(.8);
+          font-weight: bold;
+          color: var(--black);
+          text-transform: uppercase;
+        }
+      }
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: var(--blue);
+      }
+
+      &.selected {
+        background: var(--blue);
+        color: var(--white);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &.docked {
+    background: var(--white);
+    border-bottom: 1px solid var(--grey-1);
+  }
+
+  @chassis vp-width > small {
+    & nav {
+      display: flex;
+    }
+  }
+}

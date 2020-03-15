@@ -2,7 +2,7 @@ export default {
   chassis: {
     layout: {
       minWidth: 320,
-      maxWidth: 800
+      maxWidth: 1920
     },
 
     theme: 'themes/default.theme',

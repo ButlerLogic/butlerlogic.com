@@ -2,15 +2,15 @@ custom-properties {
 	/* COLORS *******************************************************************/
 	--white:       #FFFFFF;
 
-	--grey-0:      #F3F3F3;
-	--grey-1:      #E6E6E0;
+	--grey-0:      #FCFCFC;
+	--grey-1:      #EDF0F2;
 	--grey-2:      #D3D3D0;
 	--grey-3:      #959593;
 	--grey-4:      #777772;
 	--grey-5:      #595959; /* TEXT */
 	--grey-6:      #424246;
 
-	--black:       #21221E;
+	--black:       #1B2129;
 
 	--red:         #DB3A2E;
 	--red-dark:    #A72A24;
@@ -20,7 +20,7 @@ custom-properties {
 	--green:       #6A7F15;
 	--green-dark:  #4D6010;
 
-	--blue:        #0C4FCB; /* AAA */
+	--blue:        #006CFF; /* AAA */
 	--blue-dark:   #0B3B99;
 	--blue-ikb:    #002FA7;
 
@@ -43,6 +43,8 @@ custom-properties {
 	/* LAYOUT *******************************************************************/
 
 	--default-border-radius:                     .236em;
+
+	--header-height:                             calc((4 * var(--inline-block-padding-y)) + 1em);
 
 	/* COMPONENTS ***************************************************************/
 

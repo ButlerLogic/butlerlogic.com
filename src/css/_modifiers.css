@@ -1,0 +1,4 @@
+& .highlight {
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+}

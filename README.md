@@ -1,5 +1,5 @@
-# butlerlogic.com ![Version](https://img.shields.io/github/v/tag/butlerlogic/butlerlogic.com?label=Latest&style=for-the-badge)
+# butlerlogic.com
 
 Built with ButlerLogic.
 
-Generated on 3/14/2020, 8:57:11 PM
+Genereated on 3/14/2020, 8:18:01 PM
