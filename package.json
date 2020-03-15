@@ -1,6 +1,6 @@
 {
   "name": "template-website-static",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A template for building and deploying static websites on Github.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
