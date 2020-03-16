@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node --experimental-modules ./index.js build",
-    "dev": "node --experimental-modules ./index.js build dev"
+    "dev": "node --experimental-modules ./index.js build dev",
+    "setup": "node ./scripts/setup.js",
+    "generate:data": "node ./scripts/stats.js"
   },
   "author": "Graham Butler",
   "license": "ISC",
@@ -14,9 +16,11 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@chassis/core": "^2.4.4",
+    "axios": "^0.19.2",
     "fs-extra": "^8.1.0",
     "log-symbols": "^3.0.0",
     "productionline": "^1.3.13",
+    "shortbus": "^1.2.8",
     "terser": "^4.6.6"
   },
   "type": "module",
