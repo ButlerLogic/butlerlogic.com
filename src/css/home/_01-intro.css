@@ -1,0 +1,45 @@
+& section.intro {
+  & .width.constraint {
+    display: flex;
+    align-items: center;
+  }
+
+  & .blurb {
+    flex: 1 1 38.2%;
+  }
+
+  & .diagram {
+    flex: 1 1 61.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.18%;
+
+    & author-icon {
+      width: unset;
+      height: unset;
+
+      & svg {
+        min-width: 400px;
+      }
+    }
+  }
+
+  & .actions {
+    display: flex;
+
+    & a {
+      @chassis apply inline-block padding-x;
+      border-right: 1px solid var(--grey-3);
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        border: none;
+      }
+    }
+  }
+}

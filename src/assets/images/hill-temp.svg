@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="770px" height="415px" viewBox="0 0 770 415" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M151.664062,273.660156 C245.5,168.984375 309.950532,111.29127 326.371094,98.75 C345.320841,84.2770539 369.86381,75.6937206 400,73 L400,309 L91,309 C121.90933,296.07477 142.130684,284.294822 151.664062,273.660156 Z" id="Rectangle" fill="#F9F9F9"></path>
+        <path d="M91,309 C108.232257,309 135.816656,290.803199 173.753195,254.409597 C238.440794,192.352943 306.339509,73 400,73 C493.660491,73 561.560949,192.353779 626.249419,254.412105 C664.183705,290.804035 691.767232,309 709,309" id="Path" stroke="#7E7E7E" stroke-width="10" stroke-linecap="round"></path>
+        <circle id="Oval" stroke="#FFFFFF" stroke-width="6" fill="#86E31D" cx="400" cy="73" r="13"></circle>
+        <text id="START-HERE" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" line-spacing="15" fill="#86E31D">
+            <tspan x="341" y="54">START HERE</tspan>
+        </text>
+        <path id="Line-2" d="M730.005188,333.989808 L759,348.500179 L729.994816,362.989806 L729.999,350.989 L59.9991059,350.750186 L57.4991061,350.749292 L57.5008943,345.749293 L60.0008941,345.750187 L730,345.989 L730.005188,333.989808 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <path id="Line-2-Copy" d="M-66.9767994,178.045692 L-66.995,190.045 L216.504006,190.500003 L219.004003,190.50401 L218.99599,195.504003 L216.495994,195.499997 L-67.004,195.045 L-67.0232737,207.045654 L-95.9999994,192.499199 L-66.9767994,178.045692 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <text id="WORKLOAD" transform="translate(29.000000, 211.500000) rotate(-90.000000) translate(-29.000000, -211.500000) " font-family="Helvetica-Bold, Helvetica" font-size="16" font-weight="bold" letter-spacing="6.2" fill="#DEDEDE">
+            <tspan x="-43.7921875" y="217">WORKLOAD</tspan>
+        </text>
+        <text id="TIME" font-family="Helvetica-Bold, Helvetica" font-size="16" font-weight="bold" letter-spacing="6.2" fill="#DEDEDE">
+            <tspan x="348.490625" y="386">TIME</tspan>
+        </text>
+        <text id="FIGURING-THINGS-OUT" font-family="Helvetica-Bold, Helvetica" font-size="12" font-weight="bold" fill="#000000">
+            <tspan x="178.001953" y="332">FIGURING THINGS OUT</tspan>
+        </text>
+        <text id="MAKING-IT-HAPPEN" font-family="Helvetica-Bold, Helvetica" font-size="12" font-weight="bold" fill="#000000">
+            <tspan x="508.498047" y="332">MAKING IT HAPPEN</tspan>
+        </text>
+    </g>
+</svg>

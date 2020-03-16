@@ -2,18 +2,339 @@
 <html lang="en" dir="ltr" class="chassis">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="/css/index.css">
+    <title>Butler Logic</title>
+
+    <link rel="stylesheet" href="css/index.css">
 
     <script defer src="https://cdn.author.io/ngn/1.3.15/complete.min.js"></script>
     <script defer type="module" src="lib/jet.min.js"></script>
-    
-    <script defer src="js/index.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-base@1.2.1/dist/author-base.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-control@1.1.1/dist/author-control.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-icon@1.1.0/dist/author-icon.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-drawer@1.0.1/dist/author-drawer.min.js"></script>
+
+    <script defer type="module" src="js/index.js"></script>
   </head>
 
-  <body class="static">
-    Static Website
+  <body class="butlerlogic home">
+    <main>
+      <header>
+        <div class="width constraint">
+          <div class="logo">
+            Butler Logic
+          </div>
+
+          <nav>
+            <a href="/enterprise">Enterprise</a>
+            <a href="/startup">Startup</a>
+            <a href="#" data-scrollto="research">R&amp;D</a>
+            <a href="#" data-scrollto="contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="width constraint">
+          <div class="slogan">
+            We're technology <span class="highlight">leaders</span> <br>solving technology problems
+          </div>
+
+          <p class="blurb">
+            We deliver lower-cost enterprise and startup solutions <br>using an efficient development process driven by our <a class="text-nowrap" href="#">industry-proven software</a>.
+          </p>
+
+          <div class="actions">
+            <a href="/enterprise" class="enterprise button">Enterprise</a>
+            <a href="/startup" class="startup button">Startup</a>
+          </div>
+
+          <div class="clients">
+            LOGOS
+          </div>
+
+          <div class="tools">
+            <button class="bare icon continue" data-scrollto="intro">
+              <author-icon src="assets/icons/chevron-down.svg"></author-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" class="intro">
+        <div class="width constraint">
+          <div class="blurb">
+            <h2>
+              Consulting solutions for <br>enterprises and startups
+            </h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="actions">
+              <a href="#" class="enterprise">Enterprise</a>
+              <a href="#" class="startup">Startup</a>
+            </div>
+          </div>
+
+          <div class="diagram">
+            <author-icon src="assets/images/hill-temp.svg"></author-icon>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <header class="width constraint">
+          Our tech industry contributions are widely used
+        </header>
+
+        <div class="examples">
+          <div class="width constraint">
+            <section class="users example">
+              <header>
+                Users
+              </header>
+
+              <figure>
+                <div class="highlight">
+                  2 million
+                </div>
+
+                <figcaption>
+                  &hellip;and growing
+                </figcaption>
+              </figure>
+            </section>
+            <section class="downloads example">
+              <header>
+                Monthly Downloads
+              </header>
+
+              <figure>
+                <div class="highlight">
+                  21,600
+                </div>
+
+                <figcaption>
+                  average
+                </figcaption>
+              </figure>
+            </section>
+            <section class="stars example">
+              <header>
+                Github Stars
+              </header>
+
+              <figure>
+                <div class="highlight">
+                  16,000
+                </div>
+
+                <figcaption>
+                  &hellip;and growing
+                </figcaption>
+              </figure>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech">
+        <div class="width constraint">
+          <h2>
+            Our technology <span class="highlight">solves problems</span>
+          </h2>
+          <p>
+            We've already solved common IT Industry problems. Your project just got less expensive.
+          </p>
+
+          <div class="products grid">
+            <div class="product">
+              <div class="title">
+                NVM for Windows
+              </div>
+
+              <p class="description">
+                The most awesomest Node version manager.
+              </p>
+            </div>
+            <div class="product">
+              <div class="title">
+                Fenix
+              </div>
+
+              <p class="description">
+                Static desktop web server for smart devs.
+              </p>
+            </div>
+            <div class="product">
+              PRODUCT
+            </div>
+            <div class="product">
+              PRODUCT
+            </div>
+            <div class="product">
+              PRODUCT
+            </div>
+            <div class="product">
+              PRODUCT
+            </div>
+            <div class="product">
+              PRODUCT
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="research">
+        <div class="width constraint">
+          <h2>
+            Research and Community
+          </h2>
+
+          <div class="columns">
+            <div class="left column articles">
+              <article>
+                <h3>Article Title</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </article>
+
+              <article>
+                <h3>Article Title</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </article>
+
+              <article>
+                <h3>Article Title</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </article>
+            </div>
+
+            <div class="feeds">
+              <div class="quora feed">
+                On Quora
+              </div>
+
+              <div class="bleeding-edge feed">
+                Bleeding Edge Web
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="width constraint">
+          <h2>
+            Meet the Founders
+          </h2>
+
+          <div class="members">
+            <div class="corey member">
+              <div class="photo">
+                <img src="assets/images/team/corey_butler.png" alt="Corey Butler, Managing Director">
+              </div>
+
+              <div class="quote">
+                "I do but I don't"
+              </div>
+
+              <div class="details">
+                <div class="name">
+                  Corey Butler
+                </div>
+                <div class="title">
+                  Managing Director
+                </div>
+              </div>
+            </div>
+
+            <div class="graham member">
+              <div class="photo">
+                <img src="assets/images/team/graham_butler.jpeg" alt="Graham Butler, Head of Product">
+              </div>
+
+              <div class="quote">
+                "You idiot!"
+              </div>
+
+              <div class="details">
+                <div class="name">
+                  Graham Butler
+                </div>
+                <div class="title">
+                  Head of Product
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="width constraint">
+          <h2>
+            Get in touch
+          </h2>
+
+          <div class="actions">
+            <button class="enterprise">
+              Tell us about your <br>Enterprise project
+            </button>
+
+            <button class="startup">
+              Tell us about your <br>Startup project
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect">
+        <div class="width constraint">
+          <nav class="social">
+            <a class="quora" href="#">
+              Q
+            </a>
+            <a class="linkedin" href="#">
+              in
+            </a>
+            <a class="medium" href="#">
+              M
+            </a>
+            <a class="github" href="#">
+              G
+            </a>
+          </nav>
+
+          <div class="locations">
+            <div class="austin">
+              Austin
+            </div>
+            <div class="chicago">
+              Chicago
+            </div>
+            <div class="losangeles">
+              Los Angeles
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="width constraint">
+          FOOT
+        </div>
+      </footer>
+    </main>
   </body>
 
 </html>

@@ -1,0 +1,52 @@
+& section.tech {
+  background: transparent;
+  text-align: center;
+
+  & .products {
+    grid-template: auto / 1fr;
+    grid-gap: var(--inline-block-padding-y);
+
+    & .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 6.18em;
+      padding: 0 var(--inline-block-padding-x);
+      background: var(--white);
+      border: 1px solid var(--grey-1);
+      border-radius: var(--default-border-radius);
+      transition: all .236s ease;
+      cursor: pointer;
+      color: var(--grey-3);
+
+      & .description {
+        display: none;
+        margin: 0;
+        @chassis font-size small;
+      }
+
+      &:hover {
+        box-shadow: .236em .236em var(--default-box-shadow-blur) var(--default-box-shadow-spread) color-mod(black a(11.8%));
+        border-color: var(--grey-2);
+        color: var(--text-color);
+
+        & .title {
+          display: none;
+        }
+
+        & .description {
+          display: block;
+        }
+      }
+    }
+
+    @chassis vp-width > tiny {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @chassis vp-width > small {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

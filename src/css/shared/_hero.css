@@ -1,0 +1,79 @@
+& section.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  background: transparent;
+
+  & .width.constraint {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  & .preslogan {
+    padding: 3.82rem 0 calc(3.09rem - .5em);
+    @chassis font-size small;
+    text-transform: uppercase;
+    color: var(--grey-3);
+
+    & span {
+      color: var(--text-color);
+    }
+  }
+
+  & .slogan {
+    margin-bottom: 2.36rem;
+    @chassis font-size larger;
+    font-weight: bold;
+    color: var(--black);
+
+    @chassis vp-width > tiny {
+      @chassis font-size largest mult(.8);
+    }
+
+    @chassis vp-width > small {
+      @chassis font-size largest;
+    }
+  }
+
+  & .blurb {
+    margin-bottom: 2.36rem;
+  }
+
+  & .actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.82rem;
+
+    & a {
+      @chassis apply inline-block margin-x;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  & .clients {
+    @chassis apply inline-block padding;
+    background: var(--white);
+    border-radius: var(--default-border-radius);
+  }
+
+  & .tools {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & button.continue {
+      @chassis font-size larger;
+    }
+  }
+}

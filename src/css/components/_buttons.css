@@ -1,0 +1,16 @@
+& .button,
+& button {
+  &.bare {
+    @chassis new button;
+
+    &.icon {
+      & author-icon svg {
+        stroke: var(--grey-3);
+      }
+
+      &:hover author-icon svg {
+        stroke: var(--blue);
+      }
+    }
+  }
+}

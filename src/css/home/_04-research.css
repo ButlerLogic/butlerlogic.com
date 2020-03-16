@@ -1,0 +1,16 @@
+& section.research {
+  text-align: center;
+
+  & .columns {
+    display: flex;
+
+    & .feeds {
+      flex: 0 0 38.2%;
+      margin-right: 6.18%;
+    }
+  }
+
+  & .articles {
+    text-align: left;
+  }
+}

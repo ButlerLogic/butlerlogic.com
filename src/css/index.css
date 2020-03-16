@@ -1,6 +1,33 @@
 @chassis init;
 @chassis include all;
+@chassis import animations;
 
-.static {
-  
+.butlerlogic {
+  background: radial-gradient(circle, var(--white) 0%, var(--grey-1) 100%);
+  background-position: center;
+  background-attachment: fixed;
+
+  & main {
+    @chassis import modifiers;
+    @chassis import dir(components);
+    @chassis import dir(shared);
+
+    & > section {
+      margin: 0;
+      padding: 11.8vh 0;
+      background: var(--white);
+    }
+  }
+
+  &.home {
+    @chassis import dir(home);
+  }
+
+  &.startup {
+    @chassis import dir(startup);
+  }
+
+  &.enterprise {
+    /* @chassis import dir(enterprise); */
+  }
 }

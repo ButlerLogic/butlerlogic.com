@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 })
 
 // Identify active user
-let user = exec('git config user.name').toString().trim()
+let user = exec('git config --get user.name', { shell: true }).toString().trim()
 user = user.length === 0 ? process.env.USER : user
 
 rl.question(`\nWho is the credited author of this site?\nCurrently ${user}. Press enter to skip.\n> `, answer => {
