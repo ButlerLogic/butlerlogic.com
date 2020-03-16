@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0;
   text-align: center;
-  background: linear-gradient(180deg, var(--grey-1) 0%, var(--grey-0) 100%);
+  background: transparent;
 
   & .width.constraint {
     flex: 1;
@@ -28,7 +28,6 @@
     @chassis font-size larger;
     font-weight: bold;
     color: var(--black);
-    text-shadow: 0 0 1em var(--white);
 
     @chassis vp-width > tiny {
       @chassis font-size largest mult(.8);
@@ -41,7 +40,6 @@
 
   & .blurb {
     margin-bottom: 2.36rem;
-    text-shadow: 0 0 1em var(--white);
   }
 
   & .actions {

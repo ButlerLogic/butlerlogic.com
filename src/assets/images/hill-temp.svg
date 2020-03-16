@@ -10,15 +10,13 @@
         <text id="START-HERE" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" line-spacing="15" fill="#86E31D">
             <tspan x="341" y="54">START HERE</tspan>
         </text>
-        <path id="Line-Copy-2" d="M62.4147002,110.82258 L63.283492,111.317758 L75.2451655,118.135445 L76.7896843,119.015761 L75.2353174,119.878569 L63.1973739,126.560665 L62.3230425,127.045995 L61.3523838,125.297332 L62.2267152,124.812003 L70.925,119.982 L62.7527119,119.936472 L-14.5056496,119.499984 L-15.5056337,119.494334 L-15.4943344,117.494366 L-14.4943504,117.500016 L62.7640112,117.936504 L70.938,117.982 L62.293137,113.055341 L61.4243452,112.560164 L62.4147002,110.82258 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
-        <path id="Line-Copy" d="M718.868686,372.388163 L719.740261,372.878424 L731.740261,379.628424 L733.289729,380.5 L731.740261,381.371576 L719.740261,388.121576 L718.868686,388.611837 L717.888163,386.868686 L718.759739,386.378424 L727.432,381.5 L153.5,381.5 L153.5,379.5 L727.432,379.5 L718.759739,374.621576 L717.888163,374.131314 L718.868686,372.388163 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
-        <line x1="60" y1="348.250186" x2="730" y2="348.749814" id="Line-2" stroke="#DEDEDE" stroke-width="5" stroke-linecap="square"></line>
-        <line x1="-76.5" y1="211" x2="198" y2="211.5" id="Line-2-Copy" stroke="#DEDEDE" stroke-width="5" stroke-linecap="square" transform="translate(60.500000, 211.000000) rotate(90.000000) translate(-60.500000, -211.000000) "></line>
-        <text id="WORKLOAD" transform="translate(28.000000, 248.500000) rotate(-90.000000) translate(-28.000000, -248.500000) " font-family="Helvetica-Bold, Helvetica" font-size="16" font-weight="bold" letter-spacing="6.2" fill="#DEDEDE">
-            <tspan x="-44.7921875" y="254">WORKLOAD</tspan>
+        <path id="Line-2" d="M730.005188,333.989808 L759,348.500179 L729.994816,362.989806 L729.999,350.989 L59.9991059,350.750186 L57.4991061,350.749292 L57.5008943,345.749293 L60.0008941,345.750187 L730,345.989 L730.005188,333.989808 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <path id="Line-2-Copy" d="M-66.9767994,178.045692 L-66.995,190.045 L216.504006,190.500003 L219.004003,190.50401 L218.99599,195.504003 L216.495994,195.499997 L-67.004,195.045 L-67.0232737,207.045654 L-95.9999994,192.499199 L-66.9767994,178.045692 Z" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <text id="WORKLOAD" transform="translate(29.000000, 211.500000) rotate(-90.000000) translate(-29.000000, -211.500000) " font-family="Helvetica-Bold, Helvetica" font-size="16" font-weight="bold" letter-spacing="6.2" fill="#DEDEDE">
+            <tspan x="-43.7921875" y="217">WORKLOAD</tspan>
         </text>
         <text id="TIME" font-family="Helvetica-Bold, Helvetica" font-size="16" font-weight="bold" letter-spacing="6.2" fill="#DEDEDE">
-            <tspan x="81.490625" y="385">TIME</tspan>
+            <tspan x="348.490625" y="386">TIME</tspan>
         </text>
         <text id="FIGURING-THINGS-OUT" font-family="Helvetica-Bold, Helvetica" font-size="12" font-weight="bold" fill="#000000">
             <tspan x="178.001953" y="332">FIGURING THINGS OUT</tspan>

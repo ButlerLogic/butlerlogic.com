@@ -5,6 +5,7 @@
 & h5,
 & h6 {
   font-weight: bold;
+  color: var(--black);
 }
 
 & h2 {

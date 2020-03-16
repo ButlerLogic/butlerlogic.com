@@ -1,4 +1,41 @@
 & section.contact {
+  padding: 2.36em 0;
   background: var(--blue);
   color: var(--white);
+  text-align: center;
+  color: var(--white);
+
+  & h2 {
+    color: var(--white);
+  }
+
+  & .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & button {
+      @chassis new button {
+        @state initial {
+          @chassis apply inline-block margin-x;
+          padding: 2.36em 1.18em;
+          border: 2px solid var(--white);
+          border-radius: .618em;
+        }
+
+        @state hover {
+          background: var(--white);
+          color: var(--blue);
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }

@@ -42,6 +42,12 @@ custom-properties {
 
 	/* LAYOUT *******************************************************************/
 
+	--default-box-shadow-x:                      0;
+	--default-box-shadow-y:                      0;
+	--default-box-shadow-blur:                   .382em;
+	--default-box-shadow-spread:                 0;
+	--default-box-shadow-color:                  color-mod(black a(23.6%));
+	--default-box-shadow:                        var(--default-box-shadow-x) var(--default-box-shadow-y) var(--default-box-shadow-blur) var(--default-box-shadow-spread) var(--default-box-shadow-color);
 	--default-border-radius:                     .236em;
 
 	--header-height:                             calc((4 * var(--inline-block-padding-y)) + 1em);

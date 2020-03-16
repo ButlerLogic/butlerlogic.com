@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
 
-  background: var(--grey-1);
+  /* background: var(--grey-1); */
   box-shadow: 0 0 0 1px var(--grey-2);
   color: var(--black);
   transition: all .382s ease;
@@ -61,7 +61,7 @@
 
   &.docked {
     background: var(--white);
-    box-shadow: 0 0 .382em 0 color-mod(black a(23.6%));
+    box-shadow: var(--default-box-shadow);
   }
 
   @chassis vp-width > small {

@@ -2,15 +2,10 @@
 @chassis include all;
 @chassis import animations;
 
-/* html {
-  background: linear-gradient(180deg, var(--grey-1) 0%, var(--grey-0) 100vh);
-} */
-
 .butlerlogic {
-  background: url("../assets/images/bg-main.png") repeat 0 0;
-  background: var(--grey-1);
-  /* animation: bg-scrolling 2.36s infinite; */
-  /* animation-timing-function: linear; */
+  background: radial-gradient(circle, var(--white) 0%, var(--grey-1) 100%);
+  background-position: center;
+  background-attachment: fixed;
 
   & main {
     @chassis import modifiers;
