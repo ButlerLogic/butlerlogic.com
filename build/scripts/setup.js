@@ -2,11 +2,9 @@
 import fs from 'fs'
 import path from 'path'
 import readline from 'readline'
-import { fileURLToPath } from 'url'
 import { execSync as exec } from 'child_process'
-import Release from './Release.js'
-
-global.__dirname = path.dirname(fileURLToPath(import.meta.url))
+import Release from '../lib/Release.js'
+import all from '../lib/global.js'
 
 const rl = readline.createInterface({
   input: process.stdin,
