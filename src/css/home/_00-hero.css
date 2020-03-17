@@ -26,4 +26,37 @@
       }
     }
   }
+
+  & .clients {
+    @chassis apply inline-block padding;
+    background: var(--white);
+    border-radius: var(--default-border-radius);
+  }
+
+  & .tools {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & button.continue {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      @chassis font-size larger;
+
+      &:hover {
+        background: var(--grey-1);
+
+        & author-icon svg {
+          stroke: var(--black);
+        }
+      }
+
+      &:active {
+        background: var(--grey-2);
+      }
+    }
+  }
 }

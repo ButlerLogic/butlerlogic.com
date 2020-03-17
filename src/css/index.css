@@ -15,6 +15,10 @@
     & > section {
       margin: 0;
       padding: 11.8vh 0;
+
+      & h2 {
+        margin-bottom: .618em;
+      }
     }
   }
 

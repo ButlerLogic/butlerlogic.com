@@ -1,0 +1,46 @@
+& > footer {
+  padding: 2.36em 0;
+
+  & .width.constraint {
+    display: flex;
+    align-items: center;
+  }
+
+  & .logo {
+    margin-bottom: var(--inline-block-margin-x);
+  }
+
+  & .legal {
+    @chassis font-size small;
+  }
+
+  & nav {
+    margin: 0;
+
+    &.primary {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6.18%;
+      padding-left: var(--inline-block-padding-x);
+      border-left: 1px solid var(--grey-2);
+      @chassis font-size small;
+
+      & a {
+        @chassis new anchor {
+          @state hover {
+            color: var(--black);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &.secondary {
+      @chassis font-size small mult(.8);
+    }
+  }
+
+  & button.back-to-top {
+    margin: 0 var(--inline-block-padding-x) 0 auto;
+  }
+}

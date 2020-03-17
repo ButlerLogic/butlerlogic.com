@@ -1,3 +1,58 @@
 & section.connect {
-  
+  background: var(--white);
+  text-align: center;
+
+  & nav.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 var(--inline-block-padding-y);
+      padding: var(--inline-block-padding-y);
+      border-radius: 50%;
+      background: var(--grey-1);
+
+      & author-icon svg {
+        fill: var(--black);
+      }
+
+      &:first-child {
+        mrgin-left: 0;
+      }
+
+      &:last-child {
+        mrgin-right: 0;
+      }
+
+      &:hover {
+        background: var(--blue);
+
+        & author-icon svg {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+
+  & .locations {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  & .location {
+    diplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & img {
+      display: block;
+      max-width: 280px;
+    }
+  }
 }

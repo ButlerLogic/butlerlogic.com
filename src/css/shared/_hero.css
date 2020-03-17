@@ -59,21 +59,4 @@
       }
     }
   }
-
-  & .clients {
-    @chassis apply inline-block padding;
-    background: var(--white);
-    border-radius: var(--default-border-radius);
-  }
-
-  & .tools {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & button.continue {
-      @chassis font-size larger;
-    }
-  }
 }

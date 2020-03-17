@@ -17,8 +17,7 @@
     & button {
       @chassis new button {
         @state initial {
-          @chassis apply inline-block margin-x;
-          padding: 2.36em 1.18em;
+          @chassis apply inline-block margin-x padding;
           border: 2px solid var(--white);
           border-radius: .618em;
         }
