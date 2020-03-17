@@ -1,5 +1,4 @@
 & section.tech {
-  background: transparent;
   text-align: center;
 
   & .products {
@@ -7,12 +6,13 @@
     grid-gap: var(--inline-block-padding-y);
 
     & .product {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 6.18em;
-      padding: 0 var(--inline-block-padding-x);
+      overflow: hidden;
       background: var(--white);
       border: 1px solid var(--grey-1);
       border-radius: var(--default-border-radius);
@@ -20,10 +20,30 @@
       cursor: pointer;
       color: var(--grey-3);
 
+      & .title {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 var(--inline-block-padding-x);
+        transition: all .236s ease;
+      }
+
       & .description {
-        display: none;
+        position: absolute;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
         margin: 0;
+        padding: 0 var(--inline-block-padding-x);
         @chassis font-size small;
+        transition: all .236s ease;
       }
 
       &:hover {
@@ -32,11 +52,14 @@
         color: var(--text-color);
 
         & .title {
-          display: none;
+          top: -100%;
         }
 
         & .description {
-          display: block;
+          top: 0;
+
+          /* transform: none; */
+          /* opacity: 1; */
         }
       }
     }

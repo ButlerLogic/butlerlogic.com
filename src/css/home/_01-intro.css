@@ -1,4 +1,6 @@
 & section.intro {
+  background: var(--white);
+
   & .width.constraint {
     display: flex;
     align-items: center;

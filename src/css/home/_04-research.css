@@ -1,4 +1,5 @@
 & section.research {
+  background: var(--white);
   text-align: center;
 
   & .columns {
