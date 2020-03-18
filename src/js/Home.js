@@ -1,14 +1,12 @@
-const Products = new NGN.DATA.Store({
-  model: new NGN.DATA.Model({
-    fields: {
-
-    }
-  })
-})
+import Config from './config.js'
 
 const Home = new JET.Interface({
   selector: '.butlerlogic.home',
   namespace: 'home',
+
+  references: {
+    productsGrid: 'section.tech .products.grid'
+  },
 
   on: {
     initialized () {
@@ -17,10 +15,78 @@ const Home = new JET.Interface({
           return console.error(err)
         }
 
-        console.log(stats)
+        this.emit('products.render', stats)
+        // this.emit('apps.render', apps, libraries, summary)
       })
+    },
+
+    products: {
+      render ({ apps, libraries, summary }) {
+        this.renderHTML(this.refs.productsGrid, Config.map(item => {
+          let numbers = item.hasOwnProperty('products')
+            ? this.getGroupStats(...arguments, item.products)
+            : Home.getStats(...arguments, item)
+
+          return ['a', {
+            class: 'product',
+            href: NGN.coalesce(item.url, '#'),
+            target: '_blank'
+          }, [
+            ['header', [
+              ['div', { class: 'title' }, [item.name]],
+              ['div', { class: 'stats' }, [
+                numbers.stars > 0 && ['div', { class: 'stars stat' }, [
+                  ['author-icon', { src: 'assets/icons/star.svg' }],
+                  ['div', { class: 'label' }, [numbers.stars.toLocaleString()]]
+                ]],
+
+                numbers.downloads > 0 && ['div', { class: 'downloads stat' }, [
+                  ['author-icon', { src: 'assets/icons/download.svg' }],
+                  ['div', { class: 'label' }, [numbers.downloads.toLocaleString()]]
+                ]],
+              ]]
+            ]],
+
+            ['p', { class: 'description' }, [item.description]]
+          ]]
+        }))
+      }
     }
   }
 })
+
+Home.getStats = function ({ apps, libraries }, product) {
+  let numbers = {
+    downloads: 0,
+    stars: 0
+  }
+
+  if (product.hasOwnProperty('library')) {
+    numbers.downloads += libraries[product.library]
+  }
+
+  if (product.hasOwnProperty('app')) {
+    let app = apps[product.app]
+
+    if (app) {
+      numbers.downloads += app.downloads
+      numbers.stars += app.stars
+    }
+  }
+
+  return numbers
+}
+
+Home.getGroupStats = function (data, products) {
+  return products.reduce((acc, product) => {
+    let stats = Home.getStats(data, product)
+    acc.downloads += stats.downloads
+    acc.stars += stats.stars
+    return acc
+  }, {
+    downloads: 0,
+    stars: 0
+  })
+}
 
 JET.ready(() => Home.initialize())

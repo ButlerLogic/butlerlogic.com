@@ -20,17 +20,45 @@
       cursor: pointer;
       color: var(--grey-3);
 
-      & .title {
+      & header {
         position: absolute;
         top: 0;
+        flex: 1;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 100%;
-        padding: 0 var(--inline-block-padding-x);
         opacity: 1;
         transition: all .236s ease;
+
+        & .stats {
+          display: flex;
+          @chassis font-size small mult(.8);
+        }
+
+        & .stat {
+          display: flex;
+          align-items: center;
+          @chassis apply inline-block margin-x;
+
+          & author-icon {
+            @chassis apply inline-block margin-x;
+          }
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        & .title {
+          color: var(--grey-6);
+          padding: 0 var(--inline-block-padding-x);
+        }
       }
 
       & .description {
@@ -50,10 +78,10 @@
 
       &:hover {
         box-shadow: .236em .236em var(--default-box-shadow-blur) var(--default-box-shadow-spread) color-mod(black a(11.8%));
-        border-color: var(--grey-2);
+        border-color: var(--blue);
         color: var(--text-color);
 
-        & .title {
+        & header {
           top: -100%;
           opacity: 0;
         }
@@ -70,7 +98,7 @@
     }
 
     @chassis vp-width > small {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
