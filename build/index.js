@@ -115,6 +115,7 @@ const builder = new Builder({
   source: path.resolve('../src'),
   assets: path.resolve('../src/assets'),
   output: path.resolve('../dist'),
+  ignoredList: ['node_modules/**/*', '**/meetup.json'],
 
   commands: {
     default: function (cmd) {
