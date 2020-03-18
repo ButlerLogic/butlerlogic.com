@@ -5,6 +5,9 @@ const Home = new JET.Interface({
   namespace: 'home',
 
   references: {
+    userStat: 'section.stats .users.example .highlight',
+    downloadsStat: 'section.stats .downloads.example .highlight',
+    starsStat: 'section.stats .stars.example .highlight',
     productsGrid: 'section.tech .products.grid'
   },
 
@@ -15,9 +18,17 @@ const Home = new JET.Interface({
           return console.error(err)
         }
 
+        this.emit('stats.render', stats.summary)
         this.emit('products.render', stats)
-        // this.emit('apps.render', apps, libraries, summary)
       })
+    },
+
+    stats: {
+      render (stats) {
+        this.renderHTML(this.refs.userStat, [stats.apps.toLocaleString()])
+        this.renderHTML(this.refs.downloadsStat, [stats.libraries.toLocaleString()])
+        this.renderHTML(this.refs.starsStat, [stats.stars.toLocaleString()])
+      }
     },
 
     products: {
