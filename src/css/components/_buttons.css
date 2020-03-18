@@ -1,5 +1,24 @@
 & .button,
 & button {
+  &.secondary {
+    @chassis new button {
+      @state initial {
+        @chassis apply inline-block padding;
+        box-shadow: inset 0 0 0 1px var(--grey-3);
+        border-radius: var(--default-border-radius);
+      }
+
+      @state hover {
+        box-shadow: inset 0 0 0 2px var(--grey-3);
+      }
+
+      @state active {
+        box-shadow: inset 0 0 0 2px var(--text-color);
+        color: var(--black);
+      }
+    }
+  }
+
   &.bare {
     @chassis new button;
 

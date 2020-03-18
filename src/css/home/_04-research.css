@@ -2,16 +2,22 @@
   background: var(--white);
   text-align: center;
 
+  & h2 {
+    @chassis apply inline-block margin-bottom;
+  }
+
   & .columns {
     display: flex;
-
-    & .feeds {
-      flex: 0 0 38.2%;
-      margin-right: 6.18%;
-    }
   }
 
   & .articles {
+    flex: 0 0 61.8%;
+    margin-right: 6.18%;
+    text-align: left;
+  }
+
+  & .feeds {
+    flex: 0 0 38.2%;
     text-align: left;
   }
 }

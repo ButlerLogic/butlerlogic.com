@@ -48,11 +48,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 var(--inline-block-padding-x);
     text-align: center;
 
     & img {
       display: block;
-      max-width: 280px;
+      max-width: 100%;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

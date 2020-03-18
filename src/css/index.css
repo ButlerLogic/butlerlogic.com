@@ -12,6 +12,10 @@
     @chassis import dir(components);
     @chassis import dir(shared);
 
+    & .text-bold {
+      font-weight: bold;
+    }
+
     & > section {
       margin: 0;
       padding: 11.8vh 0;

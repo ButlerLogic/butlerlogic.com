@@ -40,7 +40,7 @@
     }
   }
 
-  & button.back-to-top {
+  & .button.back-to-top {
     margin: 0 var(--inline-block-padding-x) 0 auto;
   }
 }

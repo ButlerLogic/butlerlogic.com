@@ -1,5 +1,5 @@
 & section.hero {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
 
   & .slogan {
     padding: 6.18rem 0 0;
@@ -9,21 +9,10 @@
     align-self: center;
     max-width: var(--layout-min-width);
 
-    & a {
+    & .button {
       flex: 1 0 50%;
-      margin: 0;
       padding-right: calc(2 * var(--inline-block-padding-x));
       padding-left: calc(2 * var(--inline-block-padding-x));
-
-      &:first-child {
-        margin-right: 1px;
-        border-radius: var(--default-border-radius) 0 0 var(--default-border-radius);
-      }
-
-      &:last-child {
-        margin-left: 1px;
-        border-radius: 0 var(--default-border-radius) var(--default-border-radius) 0;
-      }
     }
   }
 
@@ -38,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.18em 0;
 
     & button.continue {
       display: flex;

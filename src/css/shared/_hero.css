@@ -4,6 +4,7 @@
   padding: 0;
   text-align: center;
   background: transparent;
+  border-bottom: 1px solid var(--grey-1);
 
   & .width.constraint {
     flex: 1;
@@ -46,17 +47,5 @@
     display: flex;
     justify-content: center;
     margin-bottom: 3.82rem;
-
-    & a {
-      @chassis apply inline-block margin-x;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-left: 0;
-      }
-    }
   }
 }

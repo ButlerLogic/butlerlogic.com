@@ -3,52 +3,62 @@
     "coreybutler_node_linux": {
       "stars": 369,
       "downloads": 0,
-      "repo": "coreybutler/node-linux"
+      "repo": "coreybutler/node-linux",
+      "name": "node-linux"
     },
     "coreybutler_fenix": {
       "stars": 1434,
       "downloads": 98139,
-      "repo": "coreybutler/fenix"
+      "repo": "coreybutler/fenix",
+      "name": "Fenix"
     },
     "coreybutler_node_windows": {
       "stars": 1882,
       "downloads": 0,
-      "repo": "coreybutler/node-windows"
+      "repo": "coreybutler/node-windows",
+      "name": "node-windows"
     },
     "coreybutler_porthog": {
       "stars": 17,
       "downloads": 0,
-      "repo": "coreybutler/porthog"
+      "repo": "coreybutler/porthog",
+      "name": "Porthog"
     },
     "coreybutler_go_fsutil": {
       "stars": 0,
       "downloads": 0,
-      "repo": "coreybutler/go-fsutil"
+      "repo": "coreybutler/go-fsutil",
+      "name": "go-fsutil"
     },
     "coreybutler_nvm_windows": {
       "stars": 11885,
       "downloads": 1955253,
-      "repo": "coreybutler/nvm-windows"
+      "repo": "coreybutler/nvm-windows",
+      "name": "NVM for Windows"
     },
     "coreybutler_shortbus": {
       "stars": 14,
       "downloads": 0,
-      "repo": "coreybutler/shortbus"
+      "repo": "coreybutler/shortbus",
+      "name": "Shortbus"
     },
     "coreybutler_go_localenvironment": {
       "stars": 0,
       "downloads": 0,
-      "repo": "coreybutler/go-localenvironment"
+      "repo": "coreybutler/go-localenvironment",
+      "name": "go-localenvironment"
     },
     "coreybutler_node_mac": {
       "stars": 454,
       "downloads": 0,
-      "repo": "coreybutler/node-mac"
+      "repo": "coreybutler/node-mac",
+      "name": "node-mac"
     },
     "coreybutler_musthave": {
       "stars": 4,
       "downloads": 0,
-      "repo": "coreybutler/musthave"
+      "repo": "coreybutler/musthave",
+      "name": "musthave"
     }
   },
   "libraries": {

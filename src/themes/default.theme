@@ -59,9 +59,9 @@ custom-properties {
 	--anchor-active-color:                       var(--blue-dark);
 	--anchor-disabled-color:                     var(--grey-2);
 
-	--button-bg-color:                           var(--azure);
-	--button-hover-bg-color:                     var(--azure-light);
-	--button-active-bg-color:                    var(--azure-dark);
+	--button-bg-color:                           var(--blue);
+	--button-hover-bg-color:                     color-mod(var(--blue) lightness(55%));
+	--button-active-bg-color:                    color-mod(var(--blue) lightness(44%));
 	--button-text-color:                         var(--white);
 	--button-border-radius:                      var(--default-border-radius);
 
@@ -154,34 +154,21 @@ components {
 
 	anchor-button {
 		@state initial {
-			background: var(--blue);
+			background: var(--button-bg-color);
 			border-radius: .236em;
 			color: white;
 
 			& .icon {
 				stroke: currentColor;
 			}
-
-			& .test {
-				padding: .5em;
-				background: green;
-
-				& .test {
-					background: red;
-
-					& .test {
-						background: blue;
-					}
-				}
-			}
 		}
 
 		@state hover {
-			background: color-mod(var(--blue) lightness(55%));
+			background: var(--button-hover-bg-color);
 		}
 
 		@state active {
-			background: color-mod(var(--blue) lightness(44%));
+			background: var(--button-active-bg-color);
 		}
 
 		@state disabled {
