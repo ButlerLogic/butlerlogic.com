@@ -7,7 +7,7 @@ export default [
   },
 
   {
-    name: 'Node Services',
+    name: 'Node Daemons',
     description: 'One API to run JS natively on any OS',
     url: 'https://github.com/coreybutler/node-windows',
 
@@ -37,27 +37,27 @@ export default [
 
   {
     app: 'coreybutler_fenix',
-    name: 'Fenix',
+    name: 'Fenix Web Server',
     description: `The Developer's Web Server for Desktops`,
     url: 'https://fenixwebserver.com'
   },
 
   {
     library: 'ngn',
-    name: 'NGN',
+    name: 'NGN JS Library',
     description: 'A cross-runtime JS library for building anything',
     url: 'https://github.com/ngnjs'
   },
 
   {
     library: '@chassis/core',
-    name: 'Chassis',
+    name: 'Chassis CSS Framework',
     description: 'A CSS pre-processor and framework for modern UI',
     url: 'https://github.com/ngn-chassis'
   },
 
   {
-    name: 'Jet',
+    name: 'Jet UI Framework',
     description: 'A UI framework for NGN',
     url: 'https://github.com/jet-ngn'
   },
@@ -198,7 +198,9 @@ export default [
   },
 
   {
-    name: 'IAM',
+    library: '@butlerlogic/iam',
+    app: 'coreybutler_iam',
+    name: 'IAM Security',
     description: 'Cross-runtime Permissions Management SDK',
     url: 'https://github.com/coreybutler/iam'
   },
@@ -262,13 +264,13 @@ export default [
     name: 'Shortbus',
     description: 'Mini Event Bus',
     url: 'https://github.com/coreybutler/shortbus'
-  },
+  }//,
 
-  {
-    library: 'musthave',
-    app: 'coreybutler_musthave',
-    name: 'Musthave',
-    description: 'Object/Data Validation',
-    url: 'https://github.com/coreybutler/shortbus'
-  },
+  // {
+  //   library: 'musthave',
+  //   app: 'coreybutler_musthave',
+  //   name: 'Musthave',
+  //   description: 'Object/Data Validation',
+  //   url: 'https://github.com/coreybutler/shortbus'
+  // },
 ]

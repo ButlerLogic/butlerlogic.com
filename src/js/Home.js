@@ -8,7 +8,8 @@ const Home = new JET.Interface({
     userStat: 'section.stats .users.example .highlight',
     downloadsStat: 'section.stats .downloads.example .highlight',
     starsStat: 'section.stats .stars.example .highlight',
-    productsGrid: 'section.tech .products.grid'
+    productsGrid: 'section.tech .products.grid',
+    events: 'section.research .bleeding-edge .events'
   },
 
   on: {
@@ -21,6 +22,37 @@ const Home = new JET.Interface({
         this.emit('stats.render', stats.summary)
         this.emit('products.render', stats)
       })
+
+      NGN.NET.json('../assets/data/meetup.json', (err, meetup) => {
+        if (err) {
+          console.error()
+        }
+
+        this.emit('events.render', meetup)
+      })
+    },
+
+    events: {
+      render (event) {
+        let title = `${event.status === 'past' ? 'Recent' : 'Upcoming'} Meetups`
+
+        this.renderHTML(this.refs.events, [
+          ['h3', [title]],
+
+          ['a', {
+            class: 'event',
+            href: event.url,
+            target: '_blank'
+          }, [
+            ['author-icon', { src: 'assets/icons/calendar.svg' }],
+
+            ['div', { class: 'details' }, [
+              ['div', { class: 'name' }, [event.name]],
+              ['div', { class: 'date' }, [event.date.display]]
+            ]]
+          ]]
+        ])
+      }
     },
 
     stats: {
@@ -33,29 +65,34 @@ const Home = new JET.Interface({
 
     products: {
       render ({ apps, libraries, summary }) {
-        this.renderHTML(this.refs.productsGrid, Config.map(item => {
+        this.renderHTML(this.refs.productsGrid, Config.map((item, index) => {
           let numbers = item.hasOwnProperty('products')
             ? this.getGroupStats(...arguments, item.products)
             : Home.getStats(...arguments, item)
 
           return ['a', {
-            class: 'product',
+            class: [{
+              last: index === Config.length - 1
+            },'product'],
             href: NGN.coalesce(item.url, '#'),
             target: '_blank'
           }, [
             ['header', [
               ['div', { class: 'title' }, [item.name]],
-              ['div', { class: 'stats' }, [
-                numbers.stars > 0 && ['div', { class: 'stars stat' }, [
-                  ['author-icon', { src: 'assets/icons/star.svg' }],
-                  ['div', { class: 'label' }, [numbers.stars.toLocaleString()]]
-                ]],
 
-                numbers.downloads > 0 && ['div', { class: 'downloads stat' }, [
-                  ['author-icon', { src: 'assets/icons/download.svg' }],
-                  ['div', { class: 'label' }, [numbers.downloads.toLocaleString()]]
-                ]],
-              ]]
+              numbers.stars < 250
+                ? ['div', { class: 'placeholder' }, ['New']]
+                : ['div', { class: 'stats' }, [
+                  ['div', { class: 'stars stat' }, [
+                    ['author-icon', { src: 'assets/icons/star.svg' }],
+                    ['div', { class: 'label' }, [numbers.stars.toLocaleString()]]
+                  ]],
+
+                  ['div', { class: 'downloads stat' }, [
+                    ['author-icon', { src: 'assets/icons/download.svg' }],
+                    ['div', { class: 'label' }, [numbers.downloads.toLocaleString()]]
+                  ]]
+                ]]
             ]],
 
             ['p', { class: 'description' }, [item.description]]

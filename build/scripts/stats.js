@@ -27,7 +27,8 @@ stats.apps = [
   'coreybutler/node-linux',
   'coreybutler/shortbus',
   'coreybutler/porthog',
-  'coreybutler/musthave'
+  'coreybutler/musthave',
+  'coreybutler/iam'
 ]
 
 stats.libraries = [
@@ -77,7 +78,8 @@ stats.libraries = [
   'metadoc',
   'productionline',
 
-  '@butlerlogic/common-api'
+  '@butlerlogic/common-api',
+  '@butlerlogic/iam'
 ]
 
 stats.data(json => fs.writeFileSync(output, JSON.stringify(json, null, 2)))

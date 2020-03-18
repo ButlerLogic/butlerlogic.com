@@ -59,6 +59,11 @@
           color: var(--grey-6);
           padding: 0 var(--inline-block-padding-x);
         }
+
+        & .placeholder {
+          @chassis font-size small mult(.8);
+          text-transform: uppercase;
+        }
       }
 
       & .description {
@@ -79,7 +84,7 @@
       &:hover {
         box-shadow: .236em .236em var(--default-box-shadow-blur) var(--default-box-shadow-spread) color-mod(black a(11.8%));
         border-color: var(--blue);
-        color: var(--text-color);
+        color: var(--blue);
 
         & header {
           top: -100%;
@@ -89,6 +94,7 @@
         & .description {
           top: 0;
           opacity: 1;
+          color: var(--blue);
         }
       }
     }

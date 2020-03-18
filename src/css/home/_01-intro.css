@@ -15,7 +15,7 @@
     margin: 0;
     padding: 2.36em 0 0;
     background: url("../assets/images/bg-main.png") repeat;
-    /* background: linear-gradient(180deg, transparent, color-mod(var(--azure-light) a(11.8%))); */
+    background-position: top center;
     transform: translateY(1px);
 
     & author-icon {

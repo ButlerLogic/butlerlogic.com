@@ -6,18 +6,164 @@
     @chassis apply inline-block margin-bottom;
   }
 
+  & header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.18em;
+    border-bottom: 1px solid var(--grey-1);
+
+    & h3 {
+      margin: 0;
+      @chassis font-size small;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
   & .columns {
     display: flex;
   }
 
   & .articles {
-    flex: 0 0 61.8%;
+    flex: 1 1 61.8%;
     margin-right: 6.18%;
     text-align: left;
   }
 
+  & article {
+    display: flex;
+    @chassis apply inline-block margin-bottom;
+
+    & .thumbnail {
+      flex: 1;
+      display: flex;
+      width: 6.18em;
+      margin-right: var(--inline-block-padding-x);
+      border: .618em solid var(--grey-1);
+      border-radius: var(--default-border-radius);
+      overflow: hidden;
+
+      & img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    & h4 {
+      margin: 0;
+      @chassis font-size root;
+
+      & a {
+        @chassis new anchor {
+          @state initial {
+            color: var(--black);
+          }
+
+          @state hover {
+            color: var(--blue)
+          }
+        }
+      }
+    }
+
+    & .description {
+      margin: 0;
+      @chassis font-size small;
+    }
+  }
+
   & .feeds {
-    flex: 0 0 38.2%;
+    flex: 1 1 38.2%;
     text-align: left;
+  }
+
+  & .feed {
+    margin-bottom: 2.36em;
+    @chassis font-size small;
+
+    & header {
+      display: flex;
+      justify-content: space-between;
+
+      & a {
+        @chassis font-size small;
+      }
+    }
+
+    & .content {
+      @chassis apply inline-block padding-x;
+    }
+
+    &.quora {
+      & .answers {
+        list-style: disc;
+
+        & li {
+          @chassis apply inline-block margin-bottom;
+          margin-left: var(--inline-block-padding-x);
+        }
+
+        & a {
+          @chassis new anchor {
+            @state initial {
+              display: block;
+              @chassis font-size small;
+              font-weight: bold;
+            }
+
+            @state hover {
+              color: var(--blue);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &.bleeding-edge {
+      & .events {
+        & h3 {
+          color: var(--text-color);
+        }
+      }
+
+      & .event {
+        @chassis new anchor {
+          @state initial {
+            display: flex;
+            @chassis apply inline-block padding;
+            background: var(--grey-0);
+            border: 1px solid var(--grey-1);
+            border-radius: var(--default-border-radius);
+          }
+        }
+
+        & author-icon {
+          flex: 0 0 auto;
+          height: 2.36em;
+          width: 2.36em;
+          margin-right: var(--inline-block-padding-x);
+        }
+
+        & .name {
+          margin-bottom: var(--inline-block-padding-y);
+          color: var(--black);
+          font-size: 1em;
+          font-weight: bold;
+        }
+
+        & .date {
+          display: flex;
+          align-items: center;
+          font-size: .8em;
+        }
+
+        &:hover .name {
+          color: var(--blue);
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
