@@ -14,13 +14,17 @@
     @chassis font-size small;
   }
 
+  & .main {
+    margin-right: var(--inline-block-padding-x);
+  }
+
   & nav {
     margin: 0;
 
     &.primary {
-      display: flex;
+      display: none;
       flex-direction: column;
-      margin-left: 6.18%;
+      margin-left: 3.82%;
       padding-left: var(--inline-block-padding-x);
       border-left: 1px solid var(--grey-2);
       @chassis font-size small;
@@ -33,9 +37,14 @@
           }
         }
       }
+
+      @chassis vp-width > small {
+        display: flex;
+      }
     }
 
     &.secondary {
+      display: flex;
       @chassis font-size small mult(.8);
     }
   }

@@ -6,40 +6,86 @@
     justify-content: space-around;
   }
 
+  & .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.36em;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--grey-1);
+
+    & img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  & .single {
+    justify-content: center;
+    align-items: center;
+
+    & .column {
+      display: flex;
+      flex-direction: column;
+
+      &.left {
+        align-items: center;
+        @chassis apply inline-block margin-bottom;
+
+        @chassis vp-width > small {
+          margin: 0 6.18% 0 0;
+        }
+      }
+    }
+
+    & .photo {
+      height: 16.18em;
+      width: 16.18em;
+      margin: 0;
+    }
+
+    & .quote {
+      @chassis apply inline-block margin-bottom;
+      @chassis font-size larger;
+    }
+
+    @chassis vp-width > small {
+      display: flex;
+      text-align: center;
+
+      & .quote {
+        text-align: left;
+      }
+
+      & .details {
+        text-align: right;
+      }
+    }
+  }
+
+  & .name {
+    font-weight: bold;
+  }
+
+  & .title {
+    @chassis font-size small;
+  }
+
   & .member {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     & .photo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 11.8em;
       width: 11.8em;
-      margin-bottom: 2.36em;
-      border-radius: 50%;
-      overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--grey-1);
-
-      & img {
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-      }
     }
 
     & .quote {
       @chassis apply inline-block margin-bottom;
-    }
-
-    & .name {
-      font-weight: bold;
-    }
-
-    & .title {
-      @chassis font-size small;
     }
   }
 }

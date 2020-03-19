@@ -2,6 +2,7 @@
   padding: 0;
   background: var(--black);
   color: var(--white);
+  text-align: center;
 
   & > header {
     padding-top: 1.18em;
@@ -10,15 +11,10 @@
   }
 
   & .examples {
-    & .width.constraint {
-      display: flex;
-    }
-
     & .example {
-      flex: 0 0 calc(100% / 3);
       margin: 0;
-      padding: 2.36em 3.82%;
-      border-left: 1px solid black;
+      padding: 2.36em 1em;
+      text-align: center;
 
       & header {
         margin: 0;
@@ -43,6 +39,17 @@
 
       &:first-child {
         border-left: none;
+      }
+
+      @chassis vp-width > small {
+        border-left: 1px solid black;
+      }
+    }
+
+    @chassis vp-width > small {
+      & .width.constraint {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

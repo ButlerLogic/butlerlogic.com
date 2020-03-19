@@ -18,11 +18,15 @@
 
     & > section {
       margin: 0;
-      padding: 11.8vh 0;
+      padding: 2.36em 0;
 
       & h2 {
         margin-bottom: .618em;
       }
+
+      /* @chassis vp-width > small {
+        padding: 11.8vh 0;
+      } */
     }
   }
 

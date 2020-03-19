@@ -1,8 +1,4 @@
 & > header {
-  position: sticky;
-  top: 0;
-  @chassis z-index max;
-
   box-shadow: 0 0 0 1px var(--grey-2);
   color: var(--black);
   transition: all .382s ease;
@@ -54,6 +50,10 @@
         pointer-events: none;
       }
     }
+
+    @chassis vp-width > tiny {
+      display: flex;
+    }
   }
 
   &.docked {
@@ -65,9 +65,9 @@
     }
   }
 
-  @chassis vp-width > small {
-    & nav {
-      display: flex;
-    }
+  @chassis vp-width > tiny {
+    position: sticky;
+    top: 0;
+    @chassis z-index max;
   }
 }

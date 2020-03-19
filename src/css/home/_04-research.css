@@ -20,10 +20,6 @@
     }
   }
 
-  & .columns {
-    display: flex;
-  }
-
   & .articles {
     flex: 1 1 61.8%;
     margin-right: 6.18%;
@@ -167,6 +163,12 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  @chassis vp-width > small {
+    & .columns {
+      display: flex;
     }
   }
 }

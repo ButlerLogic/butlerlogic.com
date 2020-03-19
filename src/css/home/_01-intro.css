@@ -22,10 +22,6 @@
       flex: 1;
       width: unset;
       height: unset;
-
-      & svg {
-        min-width: 400px;
-      }
     }
 
     @chassis vp-width > medium {
@@ -34,14 +30,19 @@
   }
 
   & .columns {
+    padding-top: 2.36em;
     padding-bottom: 3.82em;
     box-shadow: 0 -.9vw 0 0 #7e7e7e;
     background: var(--grey-0);
     @chassis font-size small;
 
-    & .width.constraint {
-      display: flex;
-      max-width: 1024px;
+    @chassis vp-width > small {
+      padding-top: 0;
+
+      & .width.constraint {
+        display: flex;
+        max-width: 1024px;
+      }
     }
 
     @chassis vp-width > medium {
@@ -56,14 +57,20 @@
     padding: 0 2.36vw;
     text-align: center;
 
-    &:first-child {
-      padding-left: 6.18em;
-      text-align: right;
-    }
+    @chassis vp-width > small {
+      & h3 {
+        display: none;
+      }
 
-    &:last-child {
-      padding-right: 6.18em;
-      text-align: left;
+      &:first-child {
+        padding-left: 6.18em;
+        text-align: right;
+      }
+
+      &:last-child {
+        padding-right: 6.18em;
+        text-align: left;
+      }
     }
   }
 
@@ -72,8 +79,10 @@
       text-transform: uppercase;
     }
 
-    & p {
-      transform: translateY(-2em);
+    @chassis vp-width > small {
+      & p {
+        transform: translateY(-2em);
+      }
     }
   }
 

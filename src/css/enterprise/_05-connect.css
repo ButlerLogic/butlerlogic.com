@@ -14,11 +14,11 @@
     padding: 6.18vh 0;
 
     &.clients {
-      padding-top: 11.8vh;
+      padding-top: 2.36em;
     }
 
     &.contact {
-      padding-bottom: 11.8vh;
+      padding-bottom: 2.36em;
 
       & .form {
         @chassis apply inline-block padding;

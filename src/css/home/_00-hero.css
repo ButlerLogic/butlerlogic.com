@@ -17,9 +17,55 @@
   }
 
   & .clients {
-    @chassis apply inline-block padding;
+    display: none;
+    grid-gap: 1.18em;
+    justify-content: center;
+    padding: 1.18em;
     background: var(--white);
     border-radius: var(--default-border-radius);
+    overflow: hidden;
+
+    & .client {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: .382;
+
+      & img {
+        display: block;
+        max-height: 1.18em;
+        width: auto;
+      }
+
+      &.sencha {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        & img {
+         max-height: 2.36em;
+       }
+      }
+    }
+
+    /* & author-icon {
+      width: unset;
+      height: unset;
+
+      & svg {
+        max-width: 6.18em;
+        height: auto;
+      }
+    } */
+
+    @chassis vp-width > tiny {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @chassis vp-width > small {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   & .tools {

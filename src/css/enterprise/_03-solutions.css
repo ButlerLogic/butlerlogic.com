@@ -2,20 +2,11 @@
   background: var(--white);
   text-align: center;
 
-  & .products {
-    display: flex;
-    justify-content: space-around;
-  }
-
   & .product {
-    min-width: 280px;
-    max-width: 480px;
-
     & .thumbnail {
       display: flex;
       align-items: center;
       justify-content: center;
-      /* height: 16.18em; */
       margin-bottom: calc(var(--inline-block-margin-y) + .618em);
       padding: var(--inline-block-padding-y);
       background: var(--white);
@@ -49,6 +40,14 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @chassis vp-width > tiny {
+    & .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 6.18%;
     }
   }
 }

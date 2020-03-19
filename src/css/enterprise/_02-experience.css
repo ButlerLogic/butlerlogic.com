@@ -1,5 +1,5 @@
 & section.experience {
-  padding: 1.18em 0 3.82em;
+  padding: 1.18em 0 0;
   box-shadow: 0 -.9vw 0 0 #7e7e7e;
   background: var(--grey-0);
   border-bottom: 1px solid var(--grey-1);
@@ -10,13 +10,21 @@
     text-align: center;
   }
 
-  & .columns {
-    display: flex;
+  @chassis vp-width > small {
+    & .columns {
+      display: flex;
+    }
   }
 
   & .column {
     flex: 1 1 50%;
     margin: 0 3.09%;
+  }
+
+  & .quote {
+    padding: 1.91em 0;
+    @chassis font-size large;
+    text-align: center;
   }
 
   & .actions {
