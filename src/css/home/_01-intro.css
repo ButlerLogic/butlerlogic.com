@@ -1,33 +1,6 @@
 & section.intro {
-  padding: 0;
-  background: var(--white);
-  text-align: center;
-
   & h2 {
     margin-bottom: 2.36em;
-  }
-
-  & .diagram {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 2.36em 0 0;
-    background: url("../assets/images/bg-main.png") repeat;
-    background-position: top center;
-    transform: translateY(1px);
-
-    & author-icon {
-      flex: 1;
-      width: 100%;
-      height: unset;
-    }
-
-    @chassis vp-width > medium {
-      transform: none;
-    }
   }
 
   & .columns {
