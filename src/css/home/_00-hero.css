@@ -19,6 +19,8 @@
   & .clients {
     padding: var(--inline-block-padding-y);
     background: var(--white);
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--grey-1);
 
     & .flickity-slider {
       display: flex;
@@ -49,20 +51,33 @@
       width: auto;
     }
 
-    &.sencha,
-    &.dell {
-      padding-top: 0;
-      padding-bottom: 0;
-
+    &.baxter {
       & img {
-       max-height: 2.36em;
-     }
+        max-height: 1em;
+      }
     }
 
-    &.atf {
+    &.atf,
+    &.topgolf,
+    &.rr_donnelley,
+    &.cts {
       & img {
         max-height: 1.618em;
       }
+    }
+
+    &.quest {
+      & img {
+        max-height: 2em;
+      }
+    }
+
+    &.sencha,
+    &.dell,
+    &.holy_name {
+      & img {
+       max-height: 2.36em;
+     }
     }
 
     @chassis vp-width > tiny {
