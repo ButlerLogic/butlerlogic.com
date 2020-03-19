@@ -1,6 +1,6 @@
 {
   "name": "butlerlogic-website",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "butlerlogic.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
