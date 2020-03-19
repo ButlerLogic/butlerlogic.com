@@ -1,5 +1,5 @@
 import all from '../lib/global.js'
-import Statistics from '../lib/statistics.js'
+import Statistics from '../lib/Statistics.js'
 import path from 'path'
 import fs from 'fs'
 
