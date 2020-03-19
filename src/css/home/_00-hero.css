@@ -49,7 +49,8 @@
       width: auto;
     }
 
-    &.sencha {
+    &.sencha,
+    &.dell {
       padding-top: 0;
       padding-bottom: 0;
 
