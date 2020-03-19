@@ -2,18 +2,474 @@
 <html lang="en" dir="ltr" class="chassis">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="/css/index.css">
+    <title>Butler Logic</title>
+
+    <link rel="stylesheet" href="css/index.css">
 
     <script defer src="https://cdn.author.io/ngn/1.3.15/complete.min.js"></script>
     <script defer type="module" src="lib/jet.min.js"></script>
-    
-    <script defer src="js/index.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-base@1.2.1/dist/author-base.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-control@1.1.1/dist/author-control.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-icon@1.1.0/dist/author-icon.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-drawer@1.0.1/dist/author-drawer.min.js"></script>
+
+    <script defer type="module" src="js/index.js"></script>
+    <script defer type="module" src="js/Home.js"></script>
   </head>
 
-  <body class="static">
-    Static Website
+  <body class="butlerlogic home">
+    <main>
+      <header>
+        <div class="width constraint">
+          <div class="butlerlogic logo">
+            <author-icon src="assets/images/butlerlogic-logo.svg"></author-icon>
+            <span>Butler Logic</span>
+          </div>
+
+          <nav>
+            <a href="/enterprise">Enterprise</a>
+            <a href="/startup">Startup</a>
+            <a href="#" data-scrollto="research">R&amp;D</a>
+            <a href="#" data-scrollto="contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section id="hero" class="hero">
+        <div class="width constraint">
+          <div class="slogan">
+            We're technology <span class="highlight">leaders</span> <br>solving technology problems
+          </div>
+
+          <p class="blurb">
+            We deliver lower-cost enterprise and startup solutions <br>using an efficient development process driven by our <a class="text-nowrap" href="#">industry-proven software</a>.
+          </p>
+
+          <div class="actions button-bar">
+            <a href="/enterprise" class="enterprise button">Enterprise</a>
+            <a href="/startup" class="startup button">Startup</a>
+          </div>
+
+          <div class="clients">
+            LOGOS
+          </div>
+
+          <div class="tools">
+            <button class="bare icon continue" data-scrollto="intro">
+              <author-icon src="assets/icons/chevron-down.svg"></author-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" class="intro">
+        <div class="width constraint">
+          <p class="quote">
+            Some firms just deliver software and integrations. <br><span class='text-bold text-nowrap'>We deliver momentum</span>.
+          </p>
+        </div>
+
+        <div class="diagram width constraint">
+          <author-icon src="assets/images/diagrams/hillchart.svg"></author-icon>
+        </div>
+
+        <div class="columns">
+          <div class="width constraint">
+            <div class="blurb column">
+              <!-- <h3>
+                We figure things out, faster
+              </h3> -->
+
+              <p>
+                As an R&D firm at our core, we continually solve industry problems. Our unique workflow, powered by our <span class="text-nowrap">open-source</span>/commercial software, accelerates projects. This allows our experts to focus on unique client challenges instead of re-addressing common ones.
+              </p>
+            </div>
+
+            <div class="blurb column">
+              <!-- <h3>
+                We make things happen
+              </h3> -->
+
+              <p>
+                We understand the balance of business and technology. This drives every app, data warehouse, back office system, and organizational development effort we engage in. This lets you begin the journey half-way through, with a running start.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <header class="width constraint">
+          Our tech industry contributions are widely used
+        </header>
+
+        <div class="examples">
+          <div class="width constraint">
+            <section class="users example">
+              <header>
+                Users
+              </header>
+
+              <figure>
+                <div class="highlight">
+
+                </div>
+
+                <figcaption>
+                  &hellip;and growing
+                </figcaption>
+              </figure>
+            </section>
+            <section class="downloads example">
+              <header>
+                Monthly Downloads
+              </header>
+
+              <figure>
+                <div class="highlight">
+
+                </div>
+
+                <figcaption>
+                  last month
+                </figcaption>
+              </figure>
+            </section>
+            <section class="stars example">
+              <header>
+                Github Stars
+              </header>
+
+              <figure>
+                <div class="highlight">
+
+                </div>
+
+                <figcaption>
+                  &hellip;and growing
+                </figcaption>
+              </figure>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech" class="tech">
+        <div class="width constraint">
+          <h2>
+            Our technology <span class="highlight">solves problems</span>
+          </h2>
+          <p>
+            We've already solved common IT Industry problems. Your project just got less expensive.
+          </p>
+
+          <div class="products grid">
+
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="research">
+        <div class="width constraint">
+          <h2>
+            Research and Community
+          </h2>
+
+          <div class="columns">
+            <div class="articles column">
+              <header>
+                <h3>Publications</h3>
+                <!-- <a href="" target="_blank">More Articles</a> -->
+              </header>
+
+              <article>
+                <a href="https://blog.author.io/the-many-flavors-of-javascript-ba4a076ada29" target="_blank">
+                  <div class="thumbnail">
+                    <img src="assets/images/thumbnails/many-flavors.jpg" alt="The Many Flavors of JavaScript">
+                  </div>
+                </a>
+
+                <div class="content">
+                  <h4>
+                    <a href="https://blog.author.io/the-many-flavors-of-javascript-ba4a076ada29" target="_blank">
+                      The Many Flavors of JavaScript
+                    </a>
+                  </h4>
+
+                  <p class="description">
+                    A breakdown of the JavaScript ecosystem and how to understand it.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a href="https://blog.author.io/npm-needs-a-personal-trainer-537e0f8859c6" target="_blank">
+                  <div class="thumbnail">
+                    <img src="assets/images/thumbnails/npm-trainer.jpg" alt="Npm Needs a Personal Trainer">
+                  </div>
+                </a>
+
+                <div class="content">
+                  <h4>
+                    <a href="https://blog.author.io/npm-needs-a-personal-trainer-537e0f8859c6" target="_blank">
+                      Npm Needs a Personal Trainer
+                    </a>
+                  </h4>
+
+                  <p class="description">
+                    Learn how to control bloat in the npm ecosystem.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a href="https://medium.com/leadership-strategy/attitude-of-gratitude-reaction-redaction-5e5dce6c08bb" target="_blank">
+                  <div class="thumbnail">
+                    <img src="assets/images/thumbnails/attitude-gratitude.jpg" alt="Attitude of Gratitude, Reaction Redaction">
+                  </div>
+                </a>
+
+                <div class="content">
+                  <h4>
+                    <a href="https://medium.com/leadership-strategy/attitude-of-gratitude-reaction-redaction-5e5dce6c08bb" target="_blank">
+                      Attitude of Gratitude, Reaction Redaction
+                    </a>
+                  </h4>
+
+                  <p class="description">
+                    A simple mindfulness exercise to manage and thrive on the stresses of business leadership.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="feeds column">
+              <aside class="quora feed">
+                <header>
+                  <h3>
+                    On Quora
+                  </h3>
+
+                  <a class="read-more" href="https://www.quora.com/profile/Corey-Butler?sort=views" target="_blank">More</a>
+                </header>
+
+                <div class="content">
+                  <ul class="answers">
+                    <li>
+                      <a class="answer" href="https://qr.ae/TUtwkh" target="_blank">
+                        I must be missing something obvious&hellip;
+                      </a>
+                    </li>
+                    <li>
+                      <a class="answer" href="https://qr.ae/TcKOXt" target="_blank">
+                        How do Node.js APIs serve millions of requests at a time?
+                      </a>
+                    </li>
+                    <li>
+                      <a class="answer" href="https://qr.ae/pNneCU" target="_blank">
+                        Can I bet on Golang for web development instead of Node.js in 2020?
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+
+              <aside class="bleeding-edge feed">
+                <header>
+                  <h3>
+                    Community
+                  </h3>
+                </header>
+
+                <div class="content">
+                  <p>
+                    We co-organize <a href="https://edgeatx.org" target="_blank">Bleeding Edge Web</a>, Austin's most well-attended tech meetup.
+                  </p>
+
+                  <div class="events">
+
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="width constraint">
+          <div class="single columns">
+            <div class="left column">
+              <div class="photo">
+                <img src="assets/images/team/corey_butler.png" alt="Corey Butler, Managing Director">
+              </div>
+
+              <div class="quote">
+                "Don’t just follow best practices. Define them."
+              </div>
+            </div>
+
+            <div class="details column">
+              <div class="name">
+                Corey Butler
+              </div>
+              <div class="title">
+                Managing Director
+              </div>
+            </div>
+          </div>
+
+          <!-- <h2>
+            Meet the Founders
+          </h2> -->
+
+          <!-- <div class="members">
+            <div class="corey member">
+              <div class="photo">
+                <img src="assets/images/team/corey_butler.png" alt="Corey Butler, Managing Director">
+              </div>
+
+              <div class="quote">
+                "Don’t just follow best practices. Define them."
+              </div>
+
+              <div class="details">
+                <div class="name">
+                  Corey Butler
+                </div>
+                <div class="title">
+                  Managing Director
+                </div>
+              </div>
+            </div>
+
+            <div class="graham member">
+              <div class="photo">
+                <img src="assets/images/team/graham_butler.jpeg" alt="Graham Butler, Head of Product">
+              </div>
+
+              <div class="quote">
+                "You idiot!"
+              </div>
+
+              <div class="details">
+                <div class="name">
+                  Graham Butler
+                </div>
+                <div class="title">
+                  Head of Product
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="width constraint">
+          <h2>
+            Get in touch
+          </h2>
+
+          <div class="actions">
+            <p>
+              Tell us about your:
+            </p>
+
+            <div class="tools">
+              <button class="enterprise">
+                Enterprise project
+              </button>
+
+              <button class="startup">
+                Startup project
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect">
+        <div class="width constraint">
+          <nav class="social">
+            <a href="https://www.quora.com/q/knwgdmodjdvomgbj" target="_blank">
+              <author-icon src="assets/icons/social/quora.svg"></author-icon>
+            </a>
+            <a href="https://www.linkedin.com/company/butlerlogic" target="_blank">
+              <author-icon src="assets/icons/social/linkedin.svg"></author-icon>
+            </a>
+            <a href="https://medium.com/butlerlogic" target="_blank">
+              <author-icon src="assets/icons/social/medium.svg"></author-icon>
+            </a>
+            <a href="https://github.com/butlerlogic" target="_blank">
+              <author-icon src="assets/icons/social/github.svg"></author-icon>
+            </a>
+          </nav>
+
+          <div class="locations">
+            <div class="austin location">
+              <img src="assets/images/skyline-austin.png" alt="Austin, TX">
+              Austin, TX
+            </div>
+            <div class="chicago location">
+              <img src="assets/images/skyline-chicago.png" alt="Chicago, IL">
+              Chicago, IL
+            </div>
+            <div class="losangeles location">
+              <img src="assets/images/skyline-losangeles.png" alt="Los Angeles, CA">
+              Los Angeles, CA
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="width constraint">
+          <div>
+            <div class="butlerlogic logo">
+              <author-icon src="assets/images/butlerlogic-logo.svg"></author-icon>
+              <span>Butler Logic</span>
+            </div>
+
+            <div class="legal">
+              <div class="disclaimer">
+                An Ecor Ventures LLC brand
+              </div>
+
+              <div class="copyright">
+                Copyright &copy; 2020. All rights reserved
+              </div>
+
+              <nav class="secondary">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+              </nav>
+            </div>
+          </div>
+
+          <nav class="primary">
+            <a href="/enterprise">Enterprise Solutions</a>
+            <a href="/startup">Startup Solutions</a>
+            <a href="#" data-scrollto="research">Research and Development</a>
+            <a href="#" data-scrollto="contact">Contact Us</a>
+          </nav>
+
+          <nav class="primary">
+            <a href="https://www.quora.com/q/knwgdmodjdvomgbj" target="_blank">Quora</a>
+            <a href="https://www.linkedin.com/company/butlerlogic" target="_blank">Linkedin</a>
+            <a href="https://medium.com/butlerlogic" target="_blank">Medium</a>
+            <a href="https://github.com/butlerlogic" target="_blank">Github</a>
+          </nav>
+
+          <a href="#" class="back-to-top button" data-scrollto="hero">
+            <author-icon src="assets/icons/chevron-up.svg"></author-icon>
+          </a>
+        </div>
+      </footer>
+    </main>
   </body>
 
 </html>
