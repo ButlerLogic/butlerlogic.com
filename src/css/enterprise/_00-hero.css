@@ -1,0 +1,16 @@
+& section.hero {
+  & .actions {
+    & button,
+    & .button {
+      @chassis apply inline-block margin-x;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

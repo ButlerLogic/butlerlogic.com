@@ -1,10 +1,22 @@
 & section.experience {
-  padding: 3.82em 0;
-  background: var(--blue);
-  color: var(--white);
+  padding: 1.18em 0 3.82em;
+  box-shadow: 0 -.9vw 0 0 #7e7e7e;
+  background: var(--grey-0);
+  border-bottom: 1px solid var(--grey-1);
+  @chassis font-size small;
 
   & h2 {
-    color: var(--white);
+    margin-bottom: 2.36em;
+    text-align: center;
+  }
+
+  & .columns {
+    display: flex;
+  }
+
+  & .column {
+    flex: 1 1 50%;
+    margin: 0 3.09%;
   }
 
   & .actions {
@@ -19,5 +31,9 @@
         }
       }
     }
+  }
+
+  @chassis vp-width > medium {
+    box-shadow: 0 -10px 0 0 #7e7e7e;
   }
 }

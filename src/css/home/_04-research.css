@@ -61,7 +61,8 @@
           }
 
           @state hover {
-            color: var(--blue)
+            color: var(--blue);
+            text-decoration: underline;
           }
         }
       }
@@ -76,6 +77,7 @@
   & .feeds {
     flex: 1 1 38.2%;
     text-align: left;
+    background: var(--grey-0);
   }
 
   & .feed {
@@ -85,6 +87,7 @@
     & header {
       display: flex;
       justify-content: space-between;
+      @chassis apply inline-block padding-x padding-top;
 
       & a {
         @chassis font-size small;
@@ -133,7 +136,7 @@
           @state initial {
             display: flex;
             @chassis apply inline-block padding;
-            background: var(--grey-0);
+            background: var(--white);
             border: 1px solid var(--grey-1);
             border-radius: var(--default-border-radius);
           }

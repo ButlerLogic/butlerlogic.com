@@ -15,11 +15,17 @@
 
     &.clients {
       padding-top: 11.8vh;
-      border-bottom: 1px solid black;
     }
 
     &.contact {
       padding-bottom: 11.8vh;
+
+      & .form {
+        @chassis apply inline-block padding;
+        background: color-mod(var(--black) l(11.8%));
+        border-radius: var(--default-border-radius);
+        height: 500px;
+      }
     }
   }
 }
