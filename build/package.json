@@ -7,9 +7,9 @@
     "start": "node --experimental-modules ./index.js build",
     "dev": "node --experimental-modules ./index.js build dev",
     "setup": "node ./scripts/setup.js",
-    "generate:data": "node ./scripts/stats.js"
+    "generate:data": "node --experimental-modules ./scripts/stats.js"
   },
-  "author": "Graham Butler",
+  "author": "Ecor Ventures LLC",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.8.7",
