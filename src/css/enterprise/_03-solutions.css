@@ -1,0 +1,20 @@
+& section.solutions {
+  background: var(--white);
+  text-align: center;
+
+  & .products {
+    display: flex;
+  }
+
+  & .product {
+    margin: 0 3.09%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+& section.experience {
+  padding: 3.82em 0;
+  background: var(--blue);
+  color: var(--white);
+
+  & h2 {
+    color: var(--white);
+  }
+
+  & .actions {
+    & a {
+      @chassis extend anchor {
+        @state initial {
+          color: var(--white);
+        }
+
+        @state hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

@@ -35,6 +35,6 @@
   }
 
   &.enterprise {
-    /* @chassis import dir(enterprise); */
+    @chassis import dir(enterprise);
   }
 }

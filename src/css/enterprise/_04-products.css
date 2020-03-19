@@ -1,0 +1,45 @@
+& section.products {
+  text-align: center;
+
+  & .blurb {
+    @chassis font-size large;
+    font-weight: bold;
+  }
+
+  & .products {
+    display: flex;
+  }
+
+  & .product {
+    flex: 1 1 eval(100 / 3)%;
+    margin: 0 1.91%;
+    text-align: center;
+
+    & author-icon {
+      height: 2.36em;
+      width: 2.36em;
+      @chassis apply inline-block margin-bottom;
+
+      & svg {
+        fill: var(--blue);
+      }
+    }
+
+    & .name {
+      color: var(--black);
+      font-weight: bold;
+    }
+
+    & .description {
+      @chassis font-size small;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

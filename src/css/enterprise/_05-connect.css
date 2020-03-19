@@ -1,0 +1,25 @@
+& section.connect {
+  padding: 0;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+
+  & h2,
+  & h3 {
+    color: var(--white);
+  }
+
+  & section {
+    margin: 0;
+    padding: 6.18vh 0;
+
+    &.clients {
+      padding-top: 11.8vh;
+      border-bottom: 1px solid black;
+    }
+
+    &.contact {
+      padding-bottom: 11.8vh;
+    }
+  }
+}

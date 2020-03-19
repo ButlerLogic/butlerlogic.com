@@ -38,7 +38,7 @@ export default [
   {
     app: 'coreybutler_fenix',
     name: 'Fenix Web Server',
-    description: `The Developer's Web Server for Desktops`,
+    description: `The developer's web server for desktops`,
     url: 'https://fenixwebserver.com'
   },
 
