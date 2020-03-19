@@ -26,20 +26,27 @@ const Header = new JET.Interface({
 
   on: {
     initialized () {
-      // window.scrollY returns 0 in some cases without the setTimeout
-      setTimeout(() => {
+      let listener = evt => {
         if (window.scrollY > 0) {
           this.transition('DOCK')
         }
-      }, 500)
+
+        window.removeEventListener('scroll', listener)
+      }
+
+      window.addEventListener('scroll', listener)
     },
 
     dock () {
-      this.transition('DOCK')
+      if (this.state === 'idle') {
+        this.transition('DOCK')
+      }
     },
 
     undock () {
-      this.transition('UNDOCK')
+      if (this.state === 'docked') {
+        this.transition('UNDOCK')
+      }
     }
   }
 })

@@ -1,4 +1,5 @@
 import Config from './config.js'
+import Clients from './Clients.js'
 
 const Home = new JET.Interface({
   selector: '.butlerlogic.home',
@@ -11,6 +12,10 @@ const Home = new JET.Interface({
     productsGrid: 'section.tech .products.grid',
     events: 'section.research .bleeding-edge .events'
   },
+
+  children: [
+    Clients
+  ],
 
   on: {
     initialized () {
