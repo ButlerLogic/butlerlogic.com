@@ -16,14 +16,14 @@ jobs:
       id: autotagger
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      
+
       # If the new version/tag is a pre-release (i.e. 1.0.0-beta.1), create
       # an environment variable indicating it is a prerelease.
     - name: Pre-release
       if: steps.autotagger.outputs.tagname != ''
       run: |
         if [[ "${{ steps.autotagger.output.version }}" == *"-"* ]]; then echo "::set-env IS_PRERELEASE=true";else echo "::set-env IS_PRERELEASE=''";fi
-      
+
       # Create a github release
       # This will create a snapshot of the module,
       # available in the "Releases" section on Github.
@@ -60,16 +60,16 @@ jobs:
         files: './dist/**/*.tar.gz'
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         release-tag: ${{ steps.autotagger.outputs.tagname }}
-    
+
     - name: Deploy
-      if: steps.release.outputs.id != '' && env.IS_PRERELEASE != ''
+      if: steps.release.outputs.id != '' && env.IS_PRERELEASE == ''
       uses: peaceiris/actions-gh-pages@v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: dist
         CNAME: "butlerlogic.com"
-    
+
     - name: Rollback
       if: failure()
       uses: author/action-rollback@stable
