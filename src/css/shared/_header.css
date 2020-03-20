@@ -1,4 +1,7 @@
 & > header {
+  position: sticky;
+  top: 0;
+  @chassis z-index max;
   box-shadow: 0 0 0 1px var(--grey-2);
   color: var(--black);
   transition: all .382s ease;
@@ -17,7 +20,7 @@
   }
 
   & nav {
-    display: none;
+    display: flex;
     margin: 0;
 
     & a {
@@ -49,10 +52,12 @@
         color: var(--white);
         pointer-events: none;
       }
-    }
 
-    @chassis vp-width > tiny {
-      display: flex;
+      @chassis vp-width < 480 {
+        &:nth-child(n+3) {
+          display: none;
+        }
+      }
     }
   }
 
@@ -65,9 +70,9 @@
     }
   }
 
-  @chassis vp-width > tiny {
+  /* @chassis vp-width > tiny {
     position: sticky;
     top: 0;
     @chassis z-index max;
-  }
+  } */
 }
