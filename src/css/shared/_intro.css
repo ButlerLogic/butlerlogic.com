@@ -8,8 +8,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
+    margin: 0;
     padding: 2.36em 0 0;
     background: url("../assets/images/bg-main.png") repeat;
     background-position: top center;
@@ -17,11 +16,14 @@
 
     & author-icon {
       flex: 1;
+      max-width: 1024px;
       width: 100%;
       height: auto;
+      margin: 0 auto;
     }
 
     @chassis vp-width > medium {
+      box-shadow: inset 0 -10px 0 0 #7e7e7e;
       transform: none;
     }
   }

@@ -10,6 +10,37 @@
     text-align: center;
   }
 
+  & .logos {
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+
+  & .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .618em;
+    background: var(--grey-1);
+    border-radius: var(--default-border-radius);
+    @chassis font-size small mult(.8);
+    text-align: center;
+    font-weight: bold;
+
+    & author-icon {
+      height: 3.82em;
+      width: 3.82em;
+      @chassis apply inline-block margin-bottom;
+    }
+
+    &.oracle {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   @chassis vp-width > small {
     & .columns {
       display: flex;
@@ -23,6 +54,7 @@
 
   & .quote {
     padding: 1.91em 0;
+    @chassis apply inline-block margin-top;
     @chassis font-size large;
     text-align: center;
   }

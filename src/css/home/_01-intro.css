@@ -6,7 +6,6 @@
   & .columns {
     padding-top: 2.36em;
     padding-bottom: 3.82em;
-    box-shadow: 0 -.9vw 0 0 #7e7e7e;
     background: var(--grey-0);
     @chassis font-size small;
 
@@ -17,10 +16,6 @@
         display: flex;
         max-width: 1024px;
       }
-    }
-
-    @chassis vp-width > medium {
-      box-shadow: 0 -10px 0 0 #7e7e7e;
     }
   }
 
