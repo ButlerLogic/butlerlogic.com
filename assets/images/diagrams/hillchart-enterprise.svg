@@ -8,30 +8,35 @@
             <stop stop-color="#FCFCFC" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#00BDCC" stop-opacity="0.542422421" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="50%" y1="46.3471284%" x2="50%" y2="100%" id="linearGradient-2">
+        <linearGradient x1="50%" y1="78.8983319%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FCFCFC" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#6CCC00" stop-opacity="0.52" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="46.3471284%" x2="50%" y2="100%" id="linearGradient-3">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#FCFCFC" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
             <stop stop-color="#FFFFFF" offset="46.3471284%"></stop>
             <stop stop-color="#FCFCFC" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
-        <filter x="-35.2%" y="-89.1%" width="170.4%" height="278.1%" filterUnits="objectBoundingBox" id="filter-4">
-            <feGaussianBlur stdDeviation="19" in="SourceGraphic"></feGaussianBlur>
-        </filter>
         <filter x="-35.2%" y="-89.1%" width="170.4%" height="278.1%" filterUnits="objectBoundingBox" id="filter-5">
             <feGaussianBlur stdDeviation="19" in="SourceGraphic"></feGaussianBlur>
         </filter>
         <filter x="-35.2%" y="-89.1%" width="170.4%" height="278.1%" filterUnits="objectBoundingBox" id="filter-6">
             <feGaussianBlur stdDeviation="19" in="SourceGraphic"></feGaussianBlur>
         </filter>
+        <filter x="-35.2%" y="-89.1%" width="170.4%" height="278.1%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="19" in="SourceGraphic"></feGaussianBlur>
+        </filter>
     </defs>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Curve" transform="translate(0.000000, 62.000000)">
             <path d="M0,282 C28.5531255,282 74.2593132,260.256365 137.118563,216.769095 C244.303193,142.616652 356.808506,0 512,0 L516.642976,0.0425739148 C669.441068,2.84548662 780.768653,143.358177 886.881437,216.769095 C949.740687,260.256365 995.446875,282 1024,282 L1024,282 L0,282 Z" id="Combined-Shape" fill="#FCFCFC"></path>
-            <path d="M512.01,-3.97903932e-13 L512.466059,0.00198344154 L512.466,0.004 L516.642976,0.0425739148 C669.441068,2.84548662 780.768653,143.358177 886.881437,216.769095 C892.548262,220.689516 898.07568,224.433222 903.463692,228.000214 L512,228 L512,227.999 L120,228.000214 C124.789344,224.829555 129.688836,221.519269 134.698476,218.069357 L136.582255,216.769095 C242.695038,143.358177 354.022623,2.84548662 506.820715,0.0425739148 L506.820715,0.0425739148 L511.463692,-4.40536496e-13 L511.463692,-4.40536496e-13 L512.01,-3.97903932e-13 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
-            <line x1="626.5" y1="25.5" x2="626.25" y2="282" id="Line-Copy" stroke="url(#linearGradient-2)" stroke-width="3" fill="#D8D8D8" stroke-linecap="square"></line>
-            <line x1="398.5" y1="25.5" x2="397.5" y2="282.5" id="Line" stroke="url(#linearGradient-3)" stroke-width="3" fill="#D8D8D8" stroke-linecap="square"></line>
+            <path d="M512.01,-2.7000624e-13 L512.466059,0.00198344154 L512.466,0.004 L516.642976,0.0425739148 C555.590526,0.757023814 591.843665,10.4187158 626.002824,25.6357654 L626,228 L512,228 L512,227.999 L120,228.000214 C124.789344,224.829555 129.688836,221.519269 134.698476,218.069357 L136.582255,216.769095 C241.633911,144.092286 351.796593,5.64903025 502.249177,0.167769418 L506.820715,0.0425739148 L511.463692,-3.12638804e-13 L512.01,-2.7000624e-13 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+            <path d="M886.881437,216.769095 C892.548262,220.689516 898.07568,224.433222 903.463692,228.000214 L626,227.999538 L626.002313,25.6355379 C725.85578,70.1175662 807.816192,162.070198 886.881437,216.769095 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+            <line x1="626.5" y1="25.5" x2="626.25" y2="282" id="Line-Copy" stroke="url(#linearGradient-3)" stroke-width="3" fill="#D8D8D8" stroke-linecap="square"></line>
+            <line x1="398.5" y1="25.5" x2="397.5" y2="282.5" id="Line" stroke="url(#linearGradient-4)" stroke-width="3" fill="#D8D8D8" stroke-linecap="square"></line>
             <path d="M0,277 C28.5531255,277 74.2593132,255.64189 137.118563,212.925671 C244.303193,140.087988 356.808506,0 512,0 C667.191494,0 779.699695,140.088969 886.885769,212.928615 C949.741284,255.642872 995.446028,277 1024,277" id="Path-Copy" stroke="#7E7E7E" stroke-width="10" stroke-linecap="round"></path>
         </g>
         <g id="Start-Here" transform="translate(633.500000, 71.000000) rotate(23.000000) translate(-633.500000, -71.000000) translate(544.000000, 32.000000)">
@@ -44,19 +49,19 @@
             </g>
         </g>
         <g id="Software" transform="translate(226.000000, 220.000000)">
-            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-4)" x="0" y="0" width="162" height="64"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-5)" x="0" y="0" width="162" height="64"></rect>
             <text font-family="Avenir-Heavy, Avenir" font-size="24" font-weight="600" fill="#000000">
                 <tspan x="25" y="39">Software</tspan>
             </text>
         </g>
         <g id="expertise" transform="translate(431.000000, 213.000000)">
-            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-5)" x="0" y="0" width="162" height="64"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-6)" x="0" y="0" width="162" height="64"></rect>
             <text id="Expertise" font-family="Avenir-Heavy, Avenir" font-size="24" font-weight="600" fill="#000000">
                 <tspan x="25" y="39">Expertise</tspan>
             </text>
         </g>
         <g id="manpower" transform="translate(643.000000, 220.000000)">
-            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-6)" x="0" y="0" width="162" height="64"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" filter="url(#filter-7)" x="0" y="0" width="162" height="64"></rect>
             <text id="Manpower" font-family="Avenir-Heavy, Avenir" font-size="24" font-weight="600" fill="#000000">
                 <tspan x="25" y="39">Manpower</tspan>
             </text>
