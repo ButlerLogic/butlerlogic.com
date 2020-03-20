@@ -24,9 +24,9 @@
         margin-bottom: .618em;
       }
 
-      /* @chassis vp-width > small {
-        padding: 11.8vh 0;
-      } */
+      @chassis vp-width > small {
+        padding: 3.82em 0;
+      }
     }
   }
 

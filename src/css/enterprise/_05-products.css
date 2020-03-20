@@ -1,6 +1,10 @@
 & section.products {
   text-align: center;
 
+  & h2 {
+    margin-bottom: 2.36em;
+  }
+
   & .blurb {
     @chassis font-size large;
     font-weight: bold;

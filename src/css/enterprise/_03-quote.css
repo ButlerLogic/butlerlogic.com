@@ -1,0 +1,33 @@
+& section.quote {
+  padding: 6.18em 0;
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+
+  & p {
+    @chassis font-size larger;
+    font-weight: 300;
+
+    & span {
+      font-weight: bold;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  & .actions {
+    & a {
+      @chassis extend anchor {
+        @state initial {
+          color: var(--white);
+        }
+
+        @state hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
