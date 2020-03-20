@@ -32,6 +32,12 @@
 
   &.home {
     @chassis import dir(home);
+
+    @chassis vp-width < 480 {
+      & main > header nav a:nth-child(n+3) {
+        display: none;
+      }
+    }
   }
 
   &.startup {

@@ -54,7 +54,8 @@
       }
 
       @chassis vp-width < 480 {
-        &:nth-child(n+3) {
+        &.home,
+        &:nth-child(n+4) {
           display: none;
         }
       }
