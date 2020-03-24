@@ -46,6 +46,14 @@
     &.secondary {
       display: flex;
       @chassis font-size small mult(.8);
+
+      & a {
+        margin-right: var(--inline-block-padding-x);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 
