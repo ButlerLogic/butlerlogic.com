@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1348" height="353" viewBox="0 0 1348 353">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.789" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcfcfc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#6ccc00" stop-opacity="0.514"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="0.789" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcfcfc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00bdcc" stop-opacity="0.541"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fcfcfc"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard">
+      <rect width="1348" height="353"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard" clip-path="url(#clip-Artboard)">
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M783.5,141H674V-87a256.459,256.459,0,0,1,41.813,3.463,278.947,278.947,0,0,1,39.817,9.729c9.149,2.95,18.526,6.475,27.87,10.478V141Z" transform="translate(0 158)" fill="url(#linear-gradient)"/>
+    <g id="Curve" transform="translate(13 71)">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M512,282V0C667.192,0,779.7,142.617,886.882,216.77,981.17,282,1024,282,1024,282ZM0,282s42.83,0,137.119-65.23C244.3,142.617,356.809,0,512,0V282Z" transform="translate(149)" fill="#fcfcfc"/>
+      <path id="Combined_Shape-2" data-name="Combined Shape" d="M391.574,228H109V23.456c3.544,1.512,7.118,3.108,10.624,4.743,11.848,5.523,24.077,12.015,36.349,19.3,11.379,6.751,22.787,14.142,34.877,22.6C201.583,77.595,212.567,85.742,224.431,95c21.995,17.156,43.331,35.269,63.964,52.786l.009.007c29.953,25.429,58.243,49.446,86.477,68.98,5.621,3.888,11.236,7.666,16.69,11.228Z" transform="translate(661)" fill="url(#linear-gradient)"/>
+      <path id="Combined_Shape_Copy_4" data-name="Combined Shape Copy 4" d="M110,228H-391.574c5.449-3.56,11.065-7.337,16.692-11.23,28.234-19.533,56.525-43.551,86.477-68.979l.01-.008c20.628-17.513,41.959-35.621,63.964-52.786,11.865-9.255,22.849-17.4,33.581-24.908,12.093-8.456,23.5-15.847,34.878-22.6,12.271-7.28,24.5-13.771,36.348-19.3a329.95,329.95,0,0,1,38-15.007A278.93,278.93,0,0,1-41.813,3.463,256.469,256.469,0,0,1,0,0,256.452,256.452,0,0,1,41.813,3.463,278.948,278.948,0,0,1,81.63,13.192c9.313,3,18.857,6.6,28.37,10.692V228Z" transform="translate(660.464)" fill="url(#linear-gradient-3)"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="3" height="257" transform="translate(549 24.5)" fill="url(#linear-gradient-4)"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="3" height="257" transform="translate(769 24.5)" fill="url(#linear-gradient-4)"/>
+      <path id="Path_Copy" data-name="Path Copy" d="M-30.258,277H149s42.83,0,137.119-64.074C393.3,140.088,505.809,0,661,0s267.7,140.089,374.886,212.929C1130.169,277,1173,277,1173,277h175" fill="none" stroke="#6a6a6a" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+    </g>
+    <circle id="Oval" cx="34.5" cy="34.5" r="34.5" transform="translate(797 40)" fill="#2f2f2f"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(312.339 -75.905)">
+      <path id="Path_29" data-name="Path 29" d="M393.428,97.228a6.479,6.479,0,1,0-6.479-6.479A6.479,6.479,0,0,0,393.428,97.228Z" transform="translate(-58.287)" fill="#2f2f2f"/>
+      <path id="Path_30" data-name="Path 30" d="M381.85,162.091l-13.895-8.455a2.836,2.836,0,0,0-2-.364l-10.518,1.985c.605-7.113,2.535-10.746,2.558-10.787l-.016.029c.515-1.185.627-3.575-2.506-5.053s-5.378,1.585-5.378,1.585a16.1,16.1,0,0,0-.845,1.8,11.065,11.065,0,0,1,2.283-1.076l.111-.022a1.835,1.835,0,0,1,.185-.008,2.684,2.684,0,0,1,2.553,1.7c.7,1.769.327,3.023-1.123,3.729l-.154-.317.109.338-.061.021c-.533.2-4.09,1.709-6.485,7.2-.123,1.388-.2,2.881-.222,4.488a4.155,4.155,0,0,0,4.363,3.917h.045c.118,0,.234-.007.35-.016A20.046,20.046,0,0,1,353.3,171c-.165,5.944-2.82,15.223-2.847,15.316a2.838,2.838,0,1,0,5.454,1.572c.117-.408,2.881-10.061,3.066-16.731a24.973,24.973,0,0,0-2.431-10.332l9.4-1.774,12.964,7.888a2.838,2.838,0,1,0,2.951-4.849Z" transform="translate(-26.102 -43.522)" fill="#2f2f2f"/>
+      <path id="Path_31" data-name="Path 31" d="M326.827,159.309l.016-.006.078-.028-.025.008c1.186-.578,1.421-1.5.832-2.979a2.124,2.124,0,0,0-2.129-1.323c-.41.123-10.056,3.2-11.987,18.785a2.247,2.247,0,1,0,4.459.553C319.544,162.43,325.939,159.641,326.827,159.309Z" transform="translate(0 -56.183)" fill="#2f2f2f"/>
+    </g>
+    <text id="Tech_Stack" data-name="Tech Stack" transform="translate(472 262.5)" font-size="22" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="-57.272" y="0">Tech Stack</tspan></text>
+    <text id="POC_MVP" data-name="POC / MVP" transform="translate(872 262.5)" font-size="22" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="-56.842" y="0">POC / MVP</tspan></text>
+    <text id="Dev_Workflow" data-name="Dev Workflow" transform="translate(669 231.5)" font-size="22" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="-72.537" y="0">Dev Workflow</tspan></text>
+    <path id="Path_32" data-name="Path 32" d="M96.5,251.854c-38.227-10.339-50.972-9.362-50.972-9.362" transform="matrix(0.995, 0.105, -0.105, 0.995, 714.27, -210.514)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_33" data-name="Path 33" d="M96.5,251.854c-38.227-10.339-50.972-9.362-50.972-9.362" transform="matrix(0.995, 0.105, -0.105, 0.995, 713.224, -200.569)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_34" data-name="Path 34" d="M96.5,251.854c-38.227-10.339-50.972-9.362-50.972-9.362" transform="matrix(0.995, 0.105, -0.105, 0.995, 712.179, -190.624)" fill="none" stroke="#707070" stroke-width="2"/>
+    <g id="Group_3" data-name="Group 3" transform="translate(80 -10)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="8" height="36" transform="translate(116.691 310.081) rotate(-8)"/>
+      <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(65.834 285.924) rotate(-8)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="102" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="101" height="39" fill="none"/>
+      </g>
+      <text id="CONCEPT" transform="translate(120.374 307.544) rotate(-8)" font-size="22" font-family="MarkerFelt-Thin, Marker Felt" font-weight="200"><tspan x="-38.83" y="0">CONCEPT</tspan></text>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(-80 -10)">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="8" height="36" transform="matrix(0.998, 0.07, -0.07, 0.998, 1226.608, 309.561)"/>
+      <g id="Rectangle_6" data-name="Rectangle 6" transform="matrix(0.998, 0.07, -0.07, 0.998, 1188.868, 275.847)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="88" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="87" height="39" fill="none"/>
+      </g>
+      <text id="LAUNCH" transform="matrix(0.998, 0.07, -0.07, 0.998, 1230.738, 307.845)" font-size="22" font-family="MarkerFelt-Thin, Marker Felt" font-weight="200"><tspan x="-34.43" y="0">LAUNCH</tspan></text>
+    </g>
+  </g>
+</svg>

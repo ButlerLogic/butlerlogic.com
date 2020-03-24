@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="566" height="412" viewBox="0 0 566 412">
+  <defs>
+    <clipPath id="clip-devops-guide">
+      <rect width="566" height="412"/>
+    </clipPath>
+  </defs>
+  <g id="devops-guide" clip-path="url(#clip-devops-guide)">
+    <rect width="566" height="412" fill="#fff"/>
+    <text id="Developer_Experience" data-name="Developer Experience" transform="translate(182 40)" fill="#262626" font-size="20" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="20">Developer Experience</tspan></text>
+    <rect id="Rectangle_113" data-name="Rectangle 113" width="147" height="643" fill="#f5f5f5"/>
+    <line id="Line_38" data-name="Line 38" y2="644" transform="translate(147.5 -0.5)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+    <g id="Rectangle_114" data-name="Rectangle 114" transform="translate(-1 -1)" fill="#fff" stroke="#e2e2e2" stroke-width="1">
+      <rect width="149" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="148" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_128" data-name="Rectangle 128" transform="translate(-1 29)" fill="none" stroke="#e2e2e2" stroke-width="1">
+      <rect width="149" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="148" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(-1 199)" fill="none" stroke="#e2e2e2" stroke-width="1">
+      <rect width="149" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="148" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_130" data-name="Rectangle 130" transform="translate(-1 229)" fill="none" stroke="#e2e2e2" stroke-width="1">
+      <rect width="149" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="148" height="30" fill="none"/>
+    </g>
+    <text id="Type_to_search" data-name="Type to search" transform="translate(10 18)" fill="#8b8b8b" font-size="11" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">Type to search</tspan></text>
+    <text id="Developer_Experience-2" data-name="Developer Experience" transform="translate(10 48)" fill="#585858" font-size="11" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">Developer Experience</tspan></text>
+    <rect id="Rectangle_115" data-name="Rectangle 115" width="10" height="10" transform="translate(162 10)" fill="#c3c3c3"/>
+    <rect id="Rectangle_131" data-name="Rectangle 131" width="10" height="10" transform="translate(125 390)" fill="#c3c3c3"/>
+    <rect id="Rectangle_132" data-name="Rectangle 132" width="10" height="10" transform="translate(105 390)" fill="#c3c3c3"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="5" cy="5" r="5" transform="translate(188 10)" fill="#c3c3c3"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="5" cy="5" r="5" transform="translate(502 10)" fill="#c3c3c3"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="5" cy="5" r="5" transform="translate(522 10)" fill="#c3c3c3"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" cx="5" cy="5" r="5" transform="translate(542 10)" fill="#c3c3c3"/>
+    <rect id="Rectangle_116" data-name="Rectangle 116" width="360" height="8" transform="translate(182 84)" fill="#d3d3d3"/>
+    <rect id="Rectangle_117" data-name="Rectangle 117" width="340" height="8" transform="translate(182 104)" fill="#d3d3d3"/>
+    <rect id="Rectangle_118" data-name="Rectangle 118" width="350" height="8" transform="translate(182 124)" fill="#d3d3d3"/>
+    <rect id="Rectangle_119" data-name="Rectangle 119" width="345" height="8" transform="translate(182 164)" fill="#d3d3d3"/>
+    <rect id="Rectangle_120" data-name="Rectangle 120" width="357" height="8" transform="translate(182 184)" fill="#d3d3d3"/>
+    <rect id="Rectangle_121" data-name="Rectangle 121" width="360" height="8" transform="translate(182 204)" fill="#d3d3d3"/>
+    <rect id="Rectangle_122" data-name="Rectangle 122" width="360" height="8" transform="translate(182 224)" fill="#d3d3d3"/>
+    <rect id="Rectangle_123" data-name="Rectangle 123" width="360" height="8" transform="translate(182 294)" fill="#d3d3d3"/>
+    <rect id="Rectangle_134" data-name="Rectangle 134" width="120" height="8" transform="translate(10 211)" fill="#d3d3d3"/>
+    <rect id="Rectangle_135" data-name="Rectangle 135" width="100" height="8" transform="translate(10 241)" fill="#d3d3d3"/>
+    <rect id="Rectangle_124" data-name="Rectangle 124" width="360" height="8" transform="translate(182 314)" fill="#d3d3d3"/>
+    <rect id="Rectangle_125" data-name="Rectangle 125" width="340" height="8" transform="translate(182 334)" fill="#d3d3d3"/>
+    <rect id="Rectangle_126" data-name="Rectangle 126" width="350" height="8" transform="translate(182 354)" fill="#d3d3d3"/>
+    <rect id="Rectangle_127" data-name="Rectangle 127" width="357" height="8" transform="translate(182 374)" fill="#d3d3d3"/>
+    <rect id="Rectangle_133" data-name="Rectangle 133" width="175" height="19" transform="translate(182 264)" fill="#d3d3d3"/>
+    <text id="Introduction_Developer_Code_Reviewer_Deploying_Beta_Software_User_Acceptance_Testing_Deploying_To_Production" data-name="Introduction
+Developer
+Code Reviewer
+Deploying Beta Software
+User Acceptance Testing
+Deploying To Production" transform="translate(10 84)" fill="#585858" font-size="11" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">Introduction</tspan><tspan x="0" y="17">Developer</tspan><tspan x="0" y="34">Code Reviewer</tspan><tspan x="0" y="51">Deploying Beta Software</tspan><tspan x="0" y="68">User Acceptance Testing</tspan><tspan x="0" y="85">Deploying To Production</tspan></text>
+  </g>
+</svg>

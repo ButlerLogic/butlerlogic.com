@@ -30,9 +30,7 @@
     <script defer type="module" src="lib/flickity.pkgd.min.js"></script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-base@1.2.1/dist/author-base.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-control@1.1.1/dist/author-control.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-icon@1.1.0/dist/author-icon.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@author.io/element-drawer@1.0.1/dist/author-drawer.min.js"></script>
 
     <script defer type="module" src="js/index.js"></script>
     <script defer type="module" src="js/Home.js"></script>
@@ -129,35 +127,71 @@
 
       <section id="intro" class="intro">
         <div class="width constraint">
-          <p class="quote">
-            Some firms just deliver software and integrations. <br><span class='text-bold text-nowrap'>We deliver momentum</span>.
-          </p>
-        </div>
+          <div class="columns">
+            <div class="left column">
+              <h2>
+                What we do
+              </h2>
 
-        <div class="diagram">
-          <author-icon src="assets/images/diagrams/hillchart.svg"></author-icon>
-        </div>
-
-        <div class="columns">
-          <div class="width constraint">
-            <div class="blurb column">
-              <h3>
-                We figure things out, faster
-              </h3>
-
-              <p>
-                As an R&D firm at our core, we continually solve industry problems. Our unique workflow, powered by our <span class="text-nowrap">open-source</span>/commercial software, accelerates projects. This allows our experts to focus on unique client challenges instead of re-addressing common ones.
+              <p class="greeting">
+                <!-- We actively participate in the ever-changing IT world. -->
+                Butler Logic is a consulting and R&amp;D firm on a mission to maximize the value of tech systems and the people behind them. Our experts share key insights as they craft unique and valuable solutions for <a href="/enterprise">enterprise clients</a> and <a href="/startup">startups</a>. Our open source and commercial software accelerates projects by forming the building blocks of IT systems and culture.
               </p>
+
+              <div class="actions">
+                <a href="#" class="button" data-scrollto="contact">Get in touch</a>
+              </div>
+
+              <!-- <p>
+                <a href="#contact">Get in touch</a> to see how Butler Logic can benefit your organization.
+              </p> -->
             </div>
 
-            <div class="blurb column">
-              <h3>
-                We make things happen
-              </h3>
+            <div class="services right column">
+              <!-- <h3>Services</h3> -->
 
-              <p>
-                We understand the balance of business and technology. This drives every app, data warehouse, back office system, and organizational development effort we engage in. This lets you begin the journey half-way through, with a running start.
-              </p>
+              <ul>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Technical assessments and reviews
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Project Discovery
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Enterprise tech POC's
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Systems design and analysis
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Web and data engineering
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Database design and implementation
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Data warehousing and analytics (DW/BI)
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  DevOps engineering
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  UX mockups
+                </li>
+                <li>
+                  <author-icon src="assets/icons/check-circle.svg"></author-icon>
+                  Technical staff augmentation
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -222,7 +256,7 @@
       <section id="tech" class="tech">
         <div class="width constraint">
           <h2>
-            Our technology <span class="highlight">solves problems</span>
+            Our technology <span class="highlight text-nowrap">solves problems</span>
           </h2>
           <p>
             We've already solved common IT Industry problems. Your project just got less expensive.
@@ -248,11 +282,11 @@
               </header>
 
               <article>
-                <!-- <a href="https://blog.author.io/the-many-flavors-of-javascript-ba4a076ada29" target="_blank">
+                <a href="https://blog.author.io/the-many-flavors-of-javascript-ba4a076ada29" target="_blank">
                   <div class="thumbnail">
                     <img src="assets/images/thumbnails/many-flavors.jpg" alt="The Many Flavors of JavaScript">
                   </div>
-                </a> -->
+                </a>
 
                 <div class="content">
                   <h4>
@@ -268,11 +302,11 @@
               </article>
 
               <article>
-                <!-- <a href="https://blog.author.io/npm-needs-a-personal-trainer-537e0f8859c6" target="_blank">
+                <a href="https://blog.author.io/npm-needs-a-personal-trainer-537e0f8859c6" target="_blank">
                   <div class="thumbnail">
                     <img src="assets/images/thumbnails/npm-trainer.jpg" alt="Npm Needs a Personal Trainer">
                   </div>
-                </a> -->
+                </a>
 
                 <div class="content">
                   <h4>
@@ -288,11 +322,11 @@
               </article>
 
               <article>
-                <!-- <a href="https://medium.com/leadership-strategy/attitude-of-gratitude-reaction-redaction-5e5dce6c08bb" target="_blank">
+                <a href="https://medium.com/leadership-strategy/attitude-of-gratitude-reaction-redaction-5e5dce6c08bb" target="_blank">
                   <div class="thumbnail">
                     <img src="assets/images/thumbnails/attitude-gratitude.jpg" alt="Attitude of Gratitude, Reaction Redaction">
                   </div>
-                </a> -->
+                </a>
 
                 <div class="content">
                   <h4>
@@ -508,8 +542,8 @@
               </div>
 
               <nav class="secondary">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Use</a>
               </nav>
             </div>
           </div>

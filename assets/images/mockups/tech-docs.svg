@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="566" height="412" viewBox="0 0 566 412">
+  <defs>
+    <clipPath id="clip-tech-docs">
+      <rect width="566" height="412"/>
+    </clipPath>
+  </defs>
+  <g id="tech-docs" clip-path="url(#clip-tech-docs)">
+    <rect width="566" height="412" fill="#fff"/>
+    <text id="Service_Logins_" data-name="Service Logins
+
+
+" transform="translate(44 40)" fill="#4e4e4e" font-size="20" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="20">Service Logins</tspan></text>
+    <text id="Image_API_provider_" data-name="Image API provider
+" transform="translate(44 107)" fill="#4e4e4e" font-size="14" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Image API provider</tspan><tspan x="0" y="17"></tspan></text>
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="348" height="12" transform="translate(44 117)" fill="#e3e3e3"/>
+    <rect id="Rectangle_108" data-name="Rectangle 108" width="252" height="12" transform="translate(44 172)" fill="#e3e3e3"/>
+    <rect id="Rectangle_109" data-name="Rectangle 109" width="410" height="12" transform="translate(44 226)" fill="#e3e3e3"/>
+    <rect id="Rectangle_110" data-name="Rectangle 110" width="374" height="12" transform="translate(44 276)" fill="#e3e3e3"/>
+    <rect id="Rectangle_138" data-name="Rectangle 138" width="279" height="12" transform="translate(44 326)" fill="#e3e3e3"/>
+    <rect id="Rectangle_139" data-name="Rectangle 139" width="337" height="12" transform="translate(44 376)" fill="#e3e3e3"/>
+    <text id="Linode_Dashboard_API_Server_Docker_hub.docker.com_Firebase_CloudFlare_DNS_" data-name="Linode Dashboard
+
+
+API Server
+
+
+Docker (hub.docker.com)
+
+
+Firebase
+
+
+CloudFlare (DNS)
+" transform="translate(44 165)" fill="#4e4e4e" font-size="14" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Linode Dashboard</tspan><tspan x="0" y="17"></tspan><tspan x="0" y="34"></tspan><tspan x="0" y="51">API Server</tspan><tspan x="0" y="68"></tspan><tspan x="0" y="85"></tspan><tspan x="0" y="102">Docker (hub.docker.com)</tspan><tspan x="0" y="119"></tspan><tspan x="0" y="136"></tspan><tspan x="0" y="153">Firebase</tspan><tspan x="0" y="170"></tspan><tspan x="0" y="187"></tspan><tspan x="0" y="204">CloudFlare (DNS)</tspan><tspan x="0" y="221"></tspan></text>
+  </g>
+</svg>
