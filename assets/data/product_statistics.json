@@ -1,104 +1,104 @@
 {
   "apps": {
-    "coreybutler_nvm_windows": {
-      "stars": 11966,
-      "downloads": 1973567,
-      "repo": "coreybutler/nvm-windows"
-    },
-    "coreybutler_node_mac": {
-      "stars": 455,
-      "downloads": 0,
-      "repo": "coreybutler/node-mac"
-    },
-    "coreybutler_fenix": {
-      "stars": 1436,
-      "downloads": 98474,
-      "repo": "coreybutler/fenix"
-    },
-    "coreybutler_node_linux": {
-      "stars": 370,
-      "downloads": 0,
-      "repo": "coreybutler/node-linux"
-    },
-    "coreybutler_node_windows": {
-      "stars": 1888,
-      "downloads": 0,
-      "repo": "coreybutler/node-windows"
-    },
-    "coreybutler_iam": {
-      "stars": 12,
-      "downloads": 0,
-      "repo": "coreybutler/iam"
-    },
-    "coreybutler_porthog": {
-      "stars": 17,
-      "downloads": 0,
-      "repo": "coreybutler/porthog"
-    },
     "coreybutler_go_fsutil": {
       "stars": 0,
       "downloads": 0,
       "repo": "coreybutler/go-fsutil"
-    },
-    "coreybutler_musthave": {
-      "stars": 4,
-      "downloads": 0,
-      "repo": "coreybutler/musthave"
     },
     "coreybutler_go_localenvironment": {
       "stars": 0,
       "downloads": 0,
       "repo": "coreybutler/go-localenvironment"
     },
+    "coreybutler_fenix": {
+      "stars": 1436,
+      "downloads": 98474,
+      "repo": "coreybutler/fenix"
+    },
+    "coreybutler_porthog": {
+      "stars": 17,
+      "downloads": 0,
+      "repo": "coreybutler/porthog"
+    },
+    "coreybutler_node_mac": {
+      "stars": 455,
+      "downloads": 0,
+      "repo": "coreybutler/node-mac"
+    },
     "coreybutler_shortbus": {
-      "stars": 14,
+      "stars": 15,
       "downloads": 0,
       "repo": "coreybutler/shortbus"
+    },
+    "coreybutler_node_linux": {
+      "stars": 370,
+      "downloads": 0,
+      "repo": "coreybutler/node-linux"
+    },
+    "coreybutler_iam": {
+      "stars": 13,
+      "downloads": 0,
+      "repo": "coreybutler/iam"
+    },
+    "coreybutler_node_windows": {
+      "stars": 1888,
+      "downloads": 0,
+      "repo": "coreybutler/node-windows"
+    },
+    "coreybutler_nvm_windows": {
+      "stars": 11966,
+      "downloads": 1973638,
+      "repo": "coreybutler/nvm-windows"
+    },
+    "coreybutler_musthave": {
+      "stars": 4,
+      "downloads": 0,
+      "repo": "coreybutler/musthave"
     }
   },
   "libraries": {
+    "node-windows": 15984,
     "node-mac": 248,
-    "node-linux": 669,
     "ngn": 610,
     "@author.io/element-select": 30,
-    "@author.io/element-drop-target": 12,
-    "@author.io/element-slider": 27,
-    "@author.io/element-popup": 18,
-    "@author.io/element-selected-options": 16,
-    "@author.io/element-drawer": 14,
-    "@author.io/element-control": 31,
-    "@author.io/element-cycle": 18,
-    "@author.io/element-menu": 34,
-    "node-windows": 15984,
-    "@author.io/element-datalist": 26,
-    "@author.io/element-cell": 13,
-    "musthave": 83,
-    "@author.io/element-cell-group": 13,
-    "@author.io/element-draggable": 16,
     "@author.io/element-slider-handle": 18,
-    "@author.io/element-base": 33,
-    "shortbus": 76,
-    "porthog": 16,
-    "@author.io/element-optgroup-label": 15,
-    "@author.io/element-optgroup": 15,
-    "@author.io/element-pane-handle": 12,
-    "@author.io/element-tooltip": 13,
-    "@author.io/element-option": 18,
-    "localenvironment": 58,
-    "@butlerlogic/iam": 30,
-    "@author.io/element-pane": 12,
+    "@author.io/element-drop-target": 12,
     "@chassis/core": 107,
-    "@author.io/element-options": 42,
+    "@author.io/element-control": 31,
+    "@author.io/element-draggable": 16,
     "@author.io/element-color-picker": 43,
-    "@butlerlogic/common-api": 141,
+    "musthave": 83,
+    "localenvironment": 58,
+    "shortbus": 76,
+    "node-linux": 669,
+    "metadoc": 10,
+    "porthog": 16,
     "productionline": 61,
+    "@author.io/element-options": 42,
+    "@author.io/element-base": 33,
     "@author.io/element-icon": 25,
-    "metadoc": 10
+    "@butlerlogic/iam": 30,
+    "@author.io/element-optgroup": 15,
+    "@author.io/element-pane": 12,
+    "@author.io/element-pane-handle": 12,
+    "@butlerlogic/common-api": 141,
+    "@author.io/element-popup": 18,
+    "@author.io/element-datalist": 26,
+    "@author.io/element-tooltip": 13,
+    "@author.io/element-cell": 13,
+    "@author.io/element-slider": 27,
+    "@author.io/element-cell-group": 13,
+    "@author.io/element-drawer": 14,
+    "@author.io/element-cycle": 18,
+    "@author.io/element-optgroup-label": 15,
+    "@author.io/element-menu": 34,
+    "@author.io/element-option": 18,
+    "@author.io/element-selected-options": 16
   },
   "summary": {
-    "apps": 2072041,
+    "apps": 2072112,
     "libraries": 18607,
-    "stars": 16162
+    "stars": 16164
   },
-  "date": 1585085458105
+  "date": 1585089729007
 }
