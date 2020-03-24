@@ -1,0 +1,117 @@
+& section.basics {
+  margin-top: -1px;
+  padding-top: 3.82em;
+  background: var(--grey-0);
+  text-align: center;
+
+  & header {
+    margin-bottom: 3.82em;
+  }
+
+  & .columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 6.18%;
+    margin-bottom: 2.36em;
+
+    @chassis vp-width > small {
+      grid-template-columns: repeat(2, 1fr);
+
+      & .column {
+        text-align: left;
+      }
+    }
+  }
+
+  & .tech {
+    & .logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.91%;
+    }
+
+    & .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: .618em;
+      background: var(--grey-1);
+      border-radius: var(--default-border-radius);
+      @chassis font-size small mult(.8);
+      text-align: center;
+      font-weight: bold;
+
+      & author-icon {
+        height: 3.82em;
+        width: 3.82em;
+        @chassis apply inline-block margin-bottom;
+      }
+
+      &.mongo,
+      &.microsoft {
+        & author-icon {
+          width: 6.18em;
+        }
+      }
+    }
+  }
+
+  & .bullets {
+    & .bullet {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--inline-block-padding-y);
+      padding: var(--inline-block-padding-x);
+      background: var(--white);
+      border: 1px solid var(--grey-1);
+      border-radius: var(--default-border-radius);
+      text-align: left;
+
+      & .point {
+        margin-right: var(--inline-block-padding-x);
+        color: var(--blue);
+
+        & author-icon {
+          height: 2.36em;
+          width: 2.36em;
+        }
+      }
+
+      & h3 {
+        margin-bottom: 0;
+      }
+
+      & p {
+        margin: 0;
+        @chassis font-size small;
+      }
+
+      &.stack {
+        display: block;
+        padding: 0;
+        @chassis apply inline-block margin-bottom;
+        background: transparent;
+        border: none;
+        text-align: center;
+
+        & h3 {
+          @chassis font-size large;
+        }
+
+        & p {
+          @chassis font-size root;
+        }
+
+        @chassis vp-width > small {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  & aside {
+    text-align: center;
+    font-style: italic;
+  }
+}

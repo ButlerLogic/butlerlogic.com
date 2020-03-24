@@ -1,13 +1,12 @@
 & section.experience {
-  padding-top: 1.18em;
-  box-shadow: 0 -.9vw 0 0 #7e7e7e;
   background: var(--grey-0);
-  border-bottom: 1px solid var(--grey-1);
-  @chassis font-size small;
 
   & h2 {
-    margin-bottom: 2.36em;
     text-align: center;
+
+    @chassis vp-width > small {
+      margin-bottom: 2.36em;
+    }
   }
 
   & .logos {
@@ -42,6 +41,9 @@
   }
 
   @chassis vp-width > small {
+    padding-top: 6.18em;
+    @chassis font-size small;
+
     & .columns {
       display: flex;
     }
@@ -71,9 +73,5 @@
         }
       }
     }
-  }
-
-  @chassis vp-width > medium {
-    box-shadow: 0 -10px 0 0 #7e7e7e;
   }
 }

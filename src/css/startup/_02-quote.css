@@ -8,10 +8,6 @@
     margin-bottom: 1.618em;
     @chassis font-size larger;
     font-weight: 300;
-
-    & span {
-      font-weight: bold;
-    }
   }
 
   & .actions {

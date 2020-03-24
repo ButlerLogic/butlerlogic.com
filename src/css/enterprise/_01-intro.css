@@ -1,3 +1,8 @@
 & section.intro {
-  
+  padding: 0 0 3.82em;
+  border-bottom: 1px solid var(--grey-1);
+
+  & h2 {
+    margin-bottom: 2.36em;
+  }
 }

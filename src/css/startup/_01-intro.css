@@ -1,0 +1,14 @@
+& section.intro {
+  padding: 0;
+
+  @chassis vp-width < medium {
+    & .diagram {
+      overflow: hidden;
+
+      & author-icon {
+        width: calc(100% + 8em);
+        transform: translateX(-4em);
+      }
+    }
+  }
+}

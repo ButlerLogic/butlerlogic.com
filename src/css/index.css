@@ -18,13 +18,13 @@
 
     & > section {
       margin: 0;
-      padding: 2.36em 0;
+      padding: 6.18em 0;
 
       & h2 {
         margin-bottom: .618em;
       }
 
-      @chassis vp-width > small {
+      @chassis vp-width < medium {
         padding: 3.82em 0;
       }
     }
@@ -46,5 +46,33 @@
 
   &.enterprise {
     @chassis import dir(enterprise);
+  }
+
+  &.privacy,
+  &.terms {
+    padding: 2.36em 0;
+    background: var(--white);
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      color: var(--black);
+    }
+
+    & ul {
+      list-style: disc;
+      @chassis apply inline-block margin-bottom;
+
+      & li {
+        @chassis apply inline-block padding-top;
+
+        &:last-child {
+          padding-top: 0;
+        }
+      }
+    }
   }
 }

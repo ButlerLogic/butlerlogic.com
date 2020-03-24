@@ -1,0 +1,46 @@
+& section.clients {
+  background: var(--white);
+  text-align: center;
+
+  & h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & author-icon {
+      height: 1em;
+
+      &:first-of-type {
+        @chassis apply inline-block margin-right;
+      }
+
+      &:last-of-type {
+        @chassis apply inline-block margin-left;
+      }
+    }
+  }
+
+  & .logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.36em 1em;
+
+    & .logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @chassis font-size small;
+
+      & img {
+        width: 100%;
+        max-width: 8.8em;
+        height: auto;
+      }
+    }
+
+    @chassis vp-width > small {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

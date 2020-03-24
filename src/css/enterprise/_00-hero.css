@@ -1,4 +1,6 @@
 & section.hero {
+  padding: 2.36em 0;
+
   & .actions {
     & button,
     & .button {

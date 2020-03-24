@@ -32,7 +32,7 @@
 
     & .thumbnail {
       flex: 1;
-      display: flex;
+      display: none;
       width: 6.18em;
       margin-right: var(--inline-block-padding-x);
       border: .618em solid var(--grey-1);
@@ -46,6 +46,10 @@
         max-width: 100%;
         height: auto;
         width: 100%;
+      }
+
+      @chassis vp-width > small {
+        display: flex;
       }
     }
 
@@ -95,6 +99,11 @@
 
     & .content {
       @chassis apply inline-block padding-x;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 1em;
     }
 
     &.quora {

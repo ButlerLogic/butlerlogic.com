@@ -1,16 +1,25 @@
 & section.solutions {
-  background: var(--white);
+  background: var(--blue);
+  color: var(--white);
   text-align: center;
 
+  & h2 {
+    color: var(--white);
+  }
+
   & .product {
+    display: flex;
+    flex-direction: column;
+    @chassis apply inline-block margin-bottom;
+    padding: 1em;
+    background: color-mod(var(--blue) l(44%));
+    border-radius: var(--default-border-radius);
+
     & .thumbnail {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: calc(var(--inline-block-margin-y) + .618em);
-      padding: var(--inline-block-padding-y);
-      background: var(--white);
-      border: 1px solid var(--grey-1);
       border-radius: var(--default-border-radius);
       box-shadow: 0 .236em 1em 0 color-mod(black a(11.8%));
       overflow: hidden;
@@ -18,20 +27,24 @@
       & img {
         max-width: 100%;
         max-height: 100%;
-        border: 1px solid var(--grey-1);
-      }
-
-      & author-icon {
-        flex: 1;
-        height: unset;
-        border: 1px solid var(--grey-1);
       }
     }
 
     & h3 {
       @chassis font-size large;
-      border: 1px solid var(--grey-2);
-      border-radius: var(--default-border-radius);
+      color: var(--white);
+
+      @chassis vp-width < medium {
+        order: -1;
+      }
+    }
+
+    & p {
+      margin: 0;
+
+      @chassis vp-width > small {
+        @chassis font-size small;
+      }
     }
 
     &:first-child {
@@ -40,6 +53,10 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @chassis vp-width > small {
+      margin-bottom: 0;
     }
   }
 

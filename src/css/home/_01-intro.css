@@ -1,73 +1,82 @@
 & section.intro {
-  padding-top: 1.18em;
-
-  & h2 {
-    margin-bottom: 2.36em;
-  }
-
   & .columns {
-    padding-top: 2.36em;
-    padding-bottom: 3.82em;
-    background: var(--grey-0);
-    @chassis font-size small;
+    padding: 0;
 
     @chassis vp-width > small {
-      padding-top: 0;
-
-      & .width.constraint {
-        display: flex;
-        max-width: 1024px;
-      }
+      display: flex;
     }
   }
 
   & .column {
-    flex: 1 1 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2.36vw;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 
-    @chassis vp-width > small {
-      & h3 {
+    &:first-child {
+      flex: 1 1 61.8%;
+      text-align: left;
+      @chassis font-size root;
+
+      @chassis vp-width < medium {
+        margin-bottom: 2.36em;
+
+        & .actions .button {
+          width: 100%;
+        }
+      }
+    }
+
+    &:last-child {
+      flex: 1 1 38.2%;
+
+      @chassis vp-width > small {
+        margin-left: 6.18%;
+      }
+    }
+  }
+
+  & .services {
+    padding: var(--inline-block-padding-x);
+    background: var(--grey-1);
+    border-radius: var(--default-border-radius);
+    @chassis font-size small;
+    font-weight: bold;
+
+    & h3 {
+      @chassis font-size large;
+
+      @chassis vp-width > small {
         display: none;
       }
-
-      &:first-child {
-        padding-left: 6.18em;
-        text-align: right;
-      }
-
-      &:last-child {
-        padding-right: 6.18em;
-        text-align: left;
-      }
     }
   }
 
-  & .blurb {
-    & h3 {
-      text-transform: uppercase;
-    }
-
-    @chassis vp-width > small {
-      & p {
-        transform: translateY(-2em);
-      }
-    }
-  }
-
-  & .quote {
-    margin: 0;
-    padding: 2.36em 0;
-    @chassis font-size large;
-    color: var(--black);
-  }
-
-  & .actions {
+  & ul li {
     display: flex;
-    align-self: center;
-    max-width: var(--layout-min-width);
-    margin: 0 auto;
+    align-items: center;
+    @chassis apply inline-block padding-top;
+    color: var(--black);
+    text-align: left;
+
+    & author-icon {
+      flex: 0 0 auto;
+      width: 1.618em;
+      height: 1.618em;
+      margin-right: var(--inline-block-padding-x);
+      color: var(--blue);
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    @chassis vp-width < medium {
+      @chassis font-size root;
+    }
+  }
+
+  @chassis vp-width < medium {
+    & h2 {
+      text-align: center;
+    }
   }
 }

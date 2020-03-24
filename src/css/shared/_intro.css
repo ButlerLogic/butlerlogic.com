@@ -1,30 +1,140 @@
 & section.intro {
-  padding-bottom: 0;
-  background: var(--white);
+  background: var(--grey-0);
   text-align: center;
 
+  & header {
+    margin-bottom: 3.82em;
+    background: var(--white);
+
+    & .blurb {
+      margin: 0;
+    }
+  }
+
   & .diagram {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    padding: 2.36em 0 0;
-    background: url("../assets/images/bg-main.png") repeat;
-    background-position: top center;
-    transform: translateY(1px);
+    padding: 3.82em 0 0;
+    background: var(--white);
+
+    & .numbers {
+      position: absolute;
+      bottom: 6.18%;
+      @chassis z-index front;
+      display: flex;
+      justify-content: space-around;
+      width: 38.2%;
+      font-weight: bold;
+      @chassis font-size small mult(.8);
+
+      @chassis vp-width > tiny {
+        @chassis font-size root;
+      }
+
+      @chassis vp-width > small {
+        display: none;
+      }
+    }
 
     & author-icon {
       flex: 1;
-      max-width: 1024px;
       width: 100%;
       height: auto;
       margin: 0 auto;
+      transform: translateY(1px);
     }
 
     @chassis vp-width > medium {
-      box-shadow: inset 0 -10px 0 0 #7e7e7e;
       transform: none;
     }
+  }
+
+  & .columns {
+    padding: 2.36em 0 0;
+    background: var(--grey-0);
+    /* @chassis font-size small; */
+
+    & h3 {
+      @chassis font-size root;
+    }
+
+    @chassis vp-width > small {
+      padding: 0 6.18em 2.36em;
+
+      & .width.constraint {
+        display: flex;
+      }
+
+      & h3 span {
+        display: none;
+      }
+    }
+
+    @chassis vp-width > medium {
+      & h3 {
+        @chassis font-size large;
+      }
+    }
+  }
+
+  & .column {
+    position: relative;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @chassis vp-width > small {
+      margin-top: -1.18em;
+      padding: 0 2.36vw;
+      text-align: center;
+
+      &:first-child {
+        text-align: right;
+      }
+
+      &:last-child {
+        text-align: left;
+      }
+    }
+
+    @chassis vp-width > medium {
+      margin-top: -2.36em;
+    }
+  }
+
+  & .blurb {
+    &:last-child p {
+      margin: 0;
+    }
+
+    @chassis vp-width > small {
+      & h3 {
+        text-transform: uppercase;
+      }
+
+      & p {
+        margin: 0;
+      }
+    }
+  }
+
+  & .quote {
+    margin: 0;
+    padding: 2.36em 0 3.82em;
+    @chassis font-size large;
+    color: var(--black);
   }
 }

@@ -1,0 +1,17 @@
+& section.contact {
+  padding-bottom: 2.36em;
+  background: var(--black);
+  text-align: center;
+  color: var(--white);
+
+  & h2 {
+    color: var(--white);
+  }
+
+  & .form {
+    @chassis apply inline-block padding;
+    background: color-mod(var(--black) l(11.8%));
+    border-radius: var(--default-border-radius);
+    height: 500px;
+  }
+}
